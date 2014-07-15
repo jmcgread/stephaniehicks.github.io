@@ -1,8 +1,5 @@
-.DS_Store
-.Rhistory
 _site
 *.aux
 *.log
 *.out
 *.gz
-*.tex

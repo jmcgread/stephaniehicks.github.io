@@ -1,0 +1,558 @@
+\documentclass[10pt]{article}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}
+    {\minipage[t]{\linewidth}\list{}{%
+        \setlength{\leftmargin}{\bibhang}%
+        \setlength{\itemindent}{-\leftmargin}%
+        \setlength{\itemsep}{\bibsep}%
+        \setlength{\parsep}{\z@}%
+        }}
+    {\endlist\endminipage}
+\makeatother
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.0in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=.70in,               % 1 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+%% This gives us fun enumeration environments. compactitem will be nice.
+\usepackage{paralist}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+%
+% Usage: \makeheading{name}
+%
+% Place at top of document. It should be the first thing.
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+%
+% Follow this section IMMEDIATELY with the first line of the section
+% text. Do not put whitespace in between. That is, do this:
+%
+%       \section{My Information}
+%       Here is my information.
+%
+% and NOT this:
+%
+%       \section{My Information}
+%
+%       Here is my information.
+%
+% Otherwise the top of the section header will not line up with the top
+% of the section. Of course, using a single comment character (%) on
+% empty lines allows for the function of the first example with the
+% readability of the second example.
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{compactitem}[#1]}
+        {\end{compactitem}\vspace{-.6\baselineskip}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{Stephanie C. Hicks \hfill Updated \today}
+
+\section{Contact Information}
+%
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table
+%       (adjust it to your liking; default is 1.85in).
+%
+\newlength{\rcollength}\setlength{\rcollength}{2.05in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+\href{http://bcb.dfci.harvard.edu}{Department of Biostatistics and Computational Biology} & \\
+\href{http://www.dana-farber.org}{Dana-Farber Cancer Institute} & twitter: @stephaniehicks \\ 
+450 Brookline Avenue   & email: \href{mailto:shicks@jimmy.harvard.edu}{shicks@jimmy.harvard.edu} \\ %Fax: 713.348.5476  \\
+Boston, MA 02215 USA   & website: \href{stephaniehicks.github.io}{stephaniehicks.github.io} 
+\end{tabular}
+
+%\href{http://www.hsph.harvard.edu}{Harvard School of Public Health} 
+
+%\section{Objective}
+%%
+%Placement in a post-doctoral or academic faculty research position
+%Research and develop statistical and population genetics tools in application for high-throughput sequencing technologies%to better understand genetic variation within and among populations and its association with phenotypic variation
+% Placement in a post-doctoral or academic faculty research position researching and developing statistical and population genetics tools in application for high-throughput sequencing technologies
+
+%\section{Objective} 
+%\begin{bibsection}
+%\item Placement in an interdisciplinary post-doctoral position researching and developing statistical and bioinformatics methodologies and tools for the analysis of high-throughput genomic data
+%\end{bibsection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Research Interests %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Interests}
+My research interests focus around developing statistical methods and tools in application for genomics and epigenomics data. Currently, I am focused on methods for processing and analyzing DNA methylation and gene expression using microarrays and next-generation sequencing. 
+
+%\section{Teaching Interests}
+%In addition to teaching traditional probability and statistics courses, I am particularly interested in developing more diverse courses in a Statistics or Biostatistics department with the goal of teaching statistical methods and tools for reproducible and replicable research to meet the growing demand of data scientists by offering non-theoretical courses targeted at individuals wanting to learn how to become a data scientist. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Current Appointment %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Current Appointment}
+\textbf{Postdoctoral Research Fellow}, Boston MA  \hfill 2013 - Present
+\begin{innerlist}
+\item[] Department of Biostatistics and Computational Biology, Dana-Farber Cancer Institute
+\item[] Department of Biostatistics, Harvard School of Public Health
+\item[] \textit{Mentor: Rafael Irizarry} 
+\end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Eduction %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\vskip -.25in
+\begin{table}[h]
+\begin{tabular}{cl}
+2007 - 2013 & \textbf{PhD. $\&$ M.A., Statistics}, Rice University, Houston, TX USA \\
+& \textit{Thesis Advisors: Marek Kimmel, Ph.D. (Rice, Statistics) and } \\
+& \hspace{0.95in} \textit{  Sharon Plon, M.D., Ph.D. (Baylor College of Medicine) } \\
+& \textit{Thesis Title: Probabilistic Models for Genetic and Genomic Data with Missing Information} \\
+& \\
+2003 - 2007 & \textbf{B.S., Mathematics}, Louisiana State University, Baton Rouge, LA USA \\
+&  \textit{magna cum laude}, Phi Beta Kappa 
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Professional Experience %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Professional Experience}
+\vskip -.25in
+\begin{table}[h]
+\begin{tabular}{ll}
+2013 - & \textbf{Postdoctoral Research Fellow}, DFCI and HSPH, Boston, MA   \\
+& \textit{Mentor: Rafael Irizarry} \\
+& \\
+2007 - 2013 &  \textbf{Graduate Student Researcher}, Rice University, Houston, TX \\
+& \textit{Advisors: Marek Kimmel and Sharon Plon (Baylor College of Medicine)} \\
+& \\
+2006 &  \textbf{Student Researcher (REU)}, Dept. of Statistics, University of Wisconsin, Madison, WI \\
+& \textit{Mentors: Murray  Clayton and Jo Handelsman} \\
+& \\
+2005 &  \textbf{Student Researcher (REU)}, Dept. of Statistics,  Rice University, Houston, TX  \\
+& \textit{Mentor: Javier Rojo} \\
+& \\
+2005 - 2007 &  \textbf{Student Researcher}, Dept of Psychology, LSU, Baton Rouge, LA  \\
+& \textit{Mentor: Robert Mathews} \\
+& \\
+2005 - 2007 &  \textbf{Undergraduate Tutor}, Roadmap 2 Redesign Program, LSU, Baton Rouge, LA \\
+& \textit{ Tutored college algebra, trigonometry and pre-calculus students.} \\
+& \\
+2003 - 2004 &  \textbf{Undergraduate Tutor}, LSU, Baton Rouge, LA \\
+& \textit{ Tutored students at Scotlandville Magnet High School in algebra for 3hrs/week. } \\
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Publications %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research} 
+\textbf{Manuscripts in Preparation}\\
+\blankline \\
+\begin{bibsection}
+\item {\bf Hicks SC}, Plon SE, Kimmel M. postMUT: A Statistical Tool Combining Predictions of Missense Mutation Functionality using Capture-Recapture Methods. 
+\item {\bf Hicks SC}, Plon SE, Kimmel M. Improved Detection of Regions of Identity-By-Descent in Whole-Exome Sequencing Data using Hidden Markov Models with Conditional Emission Probabilities. 
+\end{bibsection}
+
+\vskip .2in
+
+\textbf{Journal Articles}\\
+\blankline \\
+\textbf{Published in 2014:}  \\
+\begin{bibsection}
+
+\item Brahmbhatt R, Carter SA, {\bf Hicks SC}, Berger DH, Liang MK. (2014). Identifying Risk Factors for Surgical Site Complications after Laparoscopic Ventral Hernia Repair: Evaluation of the Ventral Hernia Working Group Grading System. {\it Surg Infect (Larchmt)} PMID: 24773169 [Epub ahead of print]
+
+\item Carter SA, {\bf Hicks SC}, Brahmbhatt R, Liang MK. (2014). Recurrence and Pseudorecurrence after Laparoscopic Ventral Hernia Repair: Predictors and Patient-focused Outcomes. {\it Am Surg} {\bf 80}: 138-148. PMID: 24480213
+
+\item Li LT, {\bf Hicks SC}, Davila JA, Kao LS, Berger RL, Arita NA, Liang MK. (2014). Circular Closure is Associated with the Lowest Rate of Surgical Site Infection Following Stoma Reversal:A Systematic Review and Multiple Treatment Meta-analysis. {\it Colorectal Dis} {\bf 16}: 406-416. PMID: 24422861
+
+\item Li LT, Brahmbhatt R, {\bf Hicks SC}, Davila JA, Berger DH, Liang MK. (2014). Prevalence of Surgical Site Infection at the Stoma Site following Four Skin Closure Techniques: A Retrospective Cohort Study. {\it Dig Surg} PMID: 24776653 [Epub ahead of print]
+
+\item Nguyen MT, Berger RL, {\bf Hicks SC}, Davila JA, Li LT, Kao LS, Liang MK. (2014). Comparison of Outcomes of Synthetic Mesh vs Suture Repair of Elective Primary Ventral Herniorrhaphy: A Systematic Review and Meta-analysis. {\it JAMA Surg} [Epub ahead of print] PMID: 24554114 
+
+\item Nguyen MT, Phatak UR, Li LT, {\bf Hicks SC}, Moffett JM, Arita NA, Berger RL, Kao LS, Liang MK. (2014). Review of stoma site and midline incisional hernias after stoma reversal. {\it J Surg Res} PMID: 24560428 [Epub ahead of print]
+
+\end{bibsection}
+
+\newpage
+\textbf{Published in 2013 or before:}  \\
+\begin{bibsection} 
+
+\item Berger RL, Li LT, {\bf Hicks SC}, Davila JA, Kao LS, Liang MK. (2013). Development and validation of a risk-stratification score for surgical site occurrence and surgical site infection after open ventral hernia repair. {\it J Am Coll Surg.} {\bf 217}: 974-982. PMID: 24051068
+
+\item Clapp ML, \textbf{Hicks SC}, Awad SS, Liang MK. (2013). Trans-cutaneous Closure of Central Defects (TCCD) in Laparoscopic Ventral Hernia Repairs (LVHR). {\it World J Surg}. {\bf 37}: 42-51. PMID: 23052806.
+
+\item Li LT, Jafrani RJ, Becker NS, Berger RL,  {\bf Hicks SC}, Davila JA, Liang MK. (2013). Outcomes of acute versus elective primary ventral hernia repair. {\it J Trauma Acute Care Surg} {\bf 76}: 523-528. PMID: 24458061
+
+\item Liang MK, Clapp M, Li LT, Berger RL, {\bf Hicks SC}, Awad S. (2013). Patient Satisfaction, Chronic Pain, and Functional Status following Laparoscopic Ventral Hernia Repair. {\it World J Surg}. {\bf 37}: 530-537. PMID: 23212794. 
+
+\item Liang MK, Li LT, Avellaneda A, Moffett JM, {\bf Hicks SC}, Awad SS. (2013). Outcomes and Predictors of Incisional Surgical Site Infection in Stoma Reversal. {\it JAMA Surg} {\bf 148}: 183-189. PMID: 23426597. 
+
+\item Liang MK, Berger RL, Li LT, Davila JA, {\bf Hicks SC}, Kao LS. (2013). Outcomes of laparoscopic vs open repair of primary ventral hernias. {\it JAMA Surg} {\bf 148}: 1043-1048. PMID: 24005537 
+
+\item Nguyen MT, Li LT, {\bf Hicks SC}, Davila JA, Suliburk JW, Leong M, Kao LS, Berger DH, Liang MK. (2013). Readmission following open ventral hernia repair: incidence, indications, and predictors. {\it Am J Surg} {\bf 206}: 942-948. PMID: 24296099
+
+\item Subramanian A, Clapp ML, {\bf Hicks SC}, Awad SS, Liang MK. (2013). Laparoscopic ventral hernia repair: Primary versus secondary hernias. {\it J Surg Res} {\bf 181}: e1-5. PMID: 22795342.
+
+\item Cheung HC\footnote{ `Highly Accessed' on BioMed Central}, San Lucas FA, \textbf{Hicks S}, Chang K, Bertuch AA, Ribes-Zamora A. (2012). An S/T-Q cluster domain census unveils new putative targets under Tel1/Mec1 control. {\it BMC Genomics} {\bf 13}: 664. PMID: 23176708. 
+
+\item \textbf{Hicks S}, Plon SE, Kimmel M. (2012). Statistical Analysis of Missense Mutation Classifiers. {\it Hum Mut}. e-pub 10/2012. PMID: 23086893. 
+
+\item \textbf{Hicks S}\footnote{Cited and Discussed in Nature {\bf 482}: 257-262. 09 Feb 2012. PMID: 22318607}, Wheeler DE, Plon SE, Kimmel M. (2011). Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. {\it Hum Mut}. {\bf 32}: 661-668. PMID: 21480434.
+
+
+\end{bibsection}
+
+\vskip .2in
+
+\textbf{Conference Oral Presentations} \\
+\blankline \\
+\begin{bibsection}
+	\item {\bf Hicks S}, Plon SE, Kimmel M. Modeling Discovery Of Functional SNPs From Genome Scale Data. Oral presentation: \emph{Joint Statistical Meetings}. 2011 Aug 5. Miami, FL. 
+	\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Oral presentation: \emph{Human Genome Variation Society's Exploring the Functional Consequences of Genomic Variation Meeting}. 2010 Nov 1. Washington, D.C.
+\end{bibsection}
+
+
+\newpage
+\vskip .2in
+
+\textbf{Selected Poster Presentations} \\
+\blankline \\
+\begin{bibsection}
+\item {\bf Hicks S}, Irizarry R. When to use Quantile Normalization?. Poster presented at: \emph{2014 Women in Statistics Conference}. 2014. May 15-17. Cary, NC.
+\item {\bf Hicks S}, Irizarry R. Estimating cell composition of whole blood using differentially methylated regions. Poster presented at: \emph{2013 PQG Conference}. 2013. Nov 14-15. Boston, MA. 
+\item {\bf Hicks S}, Plon SE, Kimmel M. postMUT: A Statistical Tool for Combining Predictions of Missense Mutation Functionality using Capture-Recapture Methods. Poster presented at: \emph{63nd Annual Meeting of The American Society of Human Genetics}. 2013. Oct 22-26. Boston, MA.
+\item Kimmel M, {\bf Hicks S}, Plon SE. Applications of Hidden Markov Models with Conditional Emission Probabilities to Identify Regions of Identity-By-Descent in Whole-Exome Sequencing Data. Poster presented at: \emph{63nd Annual Meeting of The American Society of Human Genetics}. 2013. Oct 22-26. Boston, MA.
+\item {\bf Hicks S}, Plon SE, Kimmel M. Capture-Recapture Models for Evaluation of Algorithms Estimating Functionality of Missense Mutations. Poster presented at: \emph{62nd Annual Meeting of The American Society of Human Genetics}. 2012 Nov 6-12. San Francisco, CA. %(Abstract $\#$ 3549F)
+\item {\bf Hicks S}, Plon SE, Kimmel M. Bernoulli mixture models in application of the evaluation of algorithms estimating functionality of missense mutations. Poster presented at: \emph{Beyond The Genome}. 2012 Sept 27-29. Boston, MA.
+\item {\bf Hicks S}, Plon SE, Kimmel M. Bernoulli Mixture Models in Application of the Evaulation of Algorithms Estimating Functionality of Missense Mutations. Poster presented at: \emph{International Conference in Stochastic Processes}. 2012. Aug 21-25. Houston, TX. 
+\item {\bf Hicks S}, Plon SE, Kimmel M. Using a Second-order Hidden Markov Model to Identify Regions of Identity-By-Descent in Exome Sequencing Data. Poster presented at: \emph{12th International Congress of Human Genetics/61st Annual Meeting of The American Society of Human Genetics}. 2011 Nov 12-15. Montreal, Canada.
+\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Poster presented at: \emph{60th Annual Meeting of the American Society of Human Genetics}. 2010 Nov 2-6. Washington, D.C.
+\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Poster presented at: \emph{4th Annual Meeting of the Genomics of Common Diseases}. 2010 Oct 6-9. Houston, TX.
+\item Cheung HC, San Lucas F, {\bf Hicks S}, Chang K, Plon SE, Bertuch AA, Ribes-Zamora A. S/T-Q Cluster Domains in Saccharomyces cerevisiae: a bioinformatic census and analysis. Poster presented at: \emph{BioScience Research Collaborative Grand Opening}. 2010 Apr 1. Houston, TX. 
+\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Predicting Functionality of Missense Mutations with Varying Levels of Evolutionary Depth. Poster presented at: \emph{Computational \& Theoretical Biology Symposium}. 2009 Dec 4-6. Houston, TX.  
+\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Predicting Functionality of Missense Mutations with Varying Levels of Evolutionary Depth. Poster presented at: \emph{59th Annual Meeting of the American Society of Human Genetics}. 2009 Oct 20-24. Honolulu, HI.
+\end{bibsection}
+
+\vskip .2in
+
+\textbf{Ph.D. Dissertation}\\
+\blankline \\
+\begin{bibsection}
+\item {\bf Hicks SC}. Probabilistic Models for Genetic and Genomic Data with Missing Information, Ph.D. Thesis, Rice University, 2013. 
+\end{bibsection}
+
+\vskip .2in
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Grants and Awards}
+\vskip -0.25in
+\begin{table}[h]
+\begin{tabular}{ll}
+2014 & Travel award for the Women in Statistics Conference 2014 \\
+2011 & Travel and tuition award for the 16th Annual Summer  Institute in Statistical Genetics \\ 
+& at University of Washington (Population Genetics, Coalescent Theory modules) \\
+2008 - 2011 & NIH T32 Training Grant Fellow, Rice University \\
+2007 & Inducted into Phi Beta Kappa \\
+2007 & LSU Austin Chapter Scholarship Award \\
+2005 - 2007 & LA-STEM Research Scholars, LSU \\
+2004 - 2005 & HMM Professors Program, LSU \\
+2003 - 2007 & TOPS Tuition Award, LSU \\
+\end{tabular}
+\end{table}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Teaching Experience %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Teaching Experience}
+\vskip -.25in
+\begin{table}[h]
+\begin{tabular}{ll}
+2014 & \textbf{Discussion Leader}, \href{https://www.edx.org/course/harvardx/harvardx-ph525x-data-analysis-genomics-1401}{HarvardX: PH525x Data Analysis for Genomics} \\
+& \textit{Course taught by Rafael Irizarry and Mike Love} \\
+& \\
+2010, 2011 & \textbf{Teaching Assistant}, Probability in Bioinformatics and Genetics (Rice - STAT 423/623)   \\
+& \textit{Grade homeworks, provide solutions, hold office hours and gave several guest lectures. } \\
+& \\
+2010 & \textbf{Teaching Assistant}, Applied Stochastic Processes (Rice - STAT 552)   \\
+& \textit{Grade homeworks, provide solutions, hold office hours and gave several guest lectures. } \\
+& \\
+2008, 2009 & \textbf{Lab Instructor}, Introduction to Statistics for the Biosciences (Rice - STAT 305)   \\
+ & \textit{Hold labs 3hr/week to teach students to use R.} \\
+& \\
+2007, 2008 & \textbf{Teaching Assistant}, Probability and Statistics (Rice - STAT 310)   \\
+& \textit{Grade homeworks, provide solutions, hold office hours and gave several guest lectures. } \\
+& \\
+\end{tabular}
+\end{table}
+
+%Rice University \hfill 2007 - 2013 
+%\begin{innerlist}
+%        \item[] Teaching Assistant for Stat 423/623: Probability in Bioinformatics and Genetics 
+%        \item[] Teaching Assistant for Stat 552: Applied Stochastic Processes
+%        \item[] Teaching Assistant for Stat 310: Probability and Statistics
+%        \item[] Lab Instructor for Stat 305: Introduction to Statistics for the Biosciences
+%
+%\end{innerlist}
+%
+%
+
+   
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Service %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Service}
+%\vskip -.35in
+%\begin{table}[h]
+%\begin{tabular}{ll}
+%2008 - 2012 & \textbf{Coordinator of the Computational Biology Seminar}, Rice University \\
+%& \textit{Responsible for maintaining the website, scheduling and announcing the speakers.} \\
+%& \\
+%2008 - 2009 & \textbf{VP of Graduate Mathematics, Applied and Computational } \\
+%& \hspace{.2in} \textbf{ Mathematicians and Statisticians}, Rice University \\
+%& \textit{To foster an environment of growth and enthusiasm for math among the students }\\
+%& \hspace{.2in} \textit{ through intellectual and social events.} \\
+%& \\
+%2005 - 2007 & \textbf{Treasurer of LSU Habitat for Humanity} \\
+%\end{tabular}
+%\end{table}
+%
+   
+
+
+
+
+\section{Statistical Expertise}
+%
+Statistical Learning, Statistical Genetics, Stochastic Processes,  Survival Analysis, Bayesian Data Analysis, Multivariate Analysis, Biostatistics, Probabilistic Models in Bioinformatics, General Linear Models, Statistical Sampling
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Technical Skills %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\textbf{Programming}: R, Perl, Python, LaTeX{}, SAS, Matlab \\
+\textbf{Operating Systems}: Mac OS X, Unix, Windows
+   
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Software %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Software}
+\vskip -0.35in
+\begin{table}[h]
+\begin{tabular}{l}
+\textit{quantro}: An R-package that can be used to test for differences between groups of distributions to \\
+ \hspace{0.5in} guide the choice of an appropriate normalization approach \\
+\textit{epigenomeSim}: An R-package to simulate data from the epigenome including gene expression \\
+\hspace{0.5in} and DNA methylation data \\
+\textit{postMUT}: A tool implemented in Perl and R to predict the functionality of missense mutations \\
+\textit{IBD2cond}: A tool implemented in Perl and R to predict regions of IBD in siblings \\
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+   
+        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Selected Memberships %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
+\section{Professional Memberships}
+%
+Member, American Statistical Association (ASA) \\
+Member, American Mathematical Society (AMS) \\
+Member, American Society of Human Genetics (ASHG)
+
+     
+        
+
+%
+%\section{References}
+%%
+% Marek Kimmel, Ph.D. \\
+%Professor, Department of Statistics \\ 
+%Rice University \\
+%kimmel@rice.edu, (713) 348-5255 \\
+%
+%Sharon Plon, M.D., Ph.D. \\
+%Professor, Departments of Pediatrics and Human and Molecular Genetics \\
+%Human Genome Sequencing Center \\
+%Baylor College of Medicine \\
+% splon@bcm.edu, (832) 824-4251 \\ 
+% 
+%Kathy Ensor, Ph.D. \\
+%Professor and Chair, Department of Statistics \\
+%Rice University \\
+%ensor@rice.edu, (713) 348-4687  \\
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
