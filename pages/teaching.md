@@ -3,7 +3,8 @@ layout: page
 title: Teaching
 ---
 
-#### Department of Biostatistics and Computational Biology, Dana-Farber Cancer Institute 
+#### Department of Biostatistics and Computational Biology, DFCI 
+
 #### Department of Biostatistics, Harvard School of Public Health
 
 2014 | **Lead Teaching Assistant**, Data Science (CS109) taught at Harvard University
