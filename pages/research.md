@@ -3,7 +3,6 @@ layout: page
 title: Research
 ---
 
-[CV](CV_StephanieHicks.pdf) &nbsp; | &nbsp; 
 [Google Scholar](http://scholar.google.com/citations?user=4T4qnL4AAAAJ) &nbsp; | &nbsp; 
 [github](https://github.com/stephaniehicks)  
 
