@@ -7,7 +7,7 @@ title: Teaching
 
 #### Department of Biostatistics, Harvard School of Public Health
 
-2014 | **Lead Teaching Assistant**, [Data Science (CS109)](http://cs109.github.io/2014/) taught at Harvard University
+2014 | **Lead Teaching Fellow**, [Data Science (CS109)](http://cs109.github.io/2014/) taught at Harvard University
 | *Course taught by Rafael Irizarry and Verena Kaynig-Fittkau*
 2014 | **Discussion Leader**, HarvardX: PH525x [Data Analysis for Genomics](http://genomicsclass.github.io/book/)
 | *Course taught by Rafael Irizarry and Mike Love*
