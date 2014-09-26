@@ -3,11 +3,13 @@ layout: page
 title: Teaching
 ---
 
-#### Department of Biostatistics and Computational Biology, DFCI and
+#### Department of Biostatistics, Dana-Farber Cancer Institute and
 
 #### Department of Biostatistics, Harvard School of Public Health
 
 2014 | **Lead Teaching Fellow**, [Data Science (CS109)](http://cs109.github.io/2014/), Harvard University 
+| * Held weekly lab sections. Developed course material, homeworks and solutions*
+| * All material available on * : [CS 109 Github](https://github.com/cs109/2014)
 | *Course taught by Rafael Irizarry and Verena Kaynig-Fittkau*
 2014 | **Discussion Leader**, [Data Analysis for Genomics (PH525x)](http://genomicsclass.github.io/book/), HarvardX
 | *Course taught by Rafael Irizarry and Mike Love*
@@ -25,5 +27,5 @@ title: Teaching
 
 #### Louisiana State University 
 
-2005-2007 | **Undergraduate tutor**, tutored college algebra, trigonometry and pre-calculus students in the [Roadmap 2 Redesign Program](https://www.math.lsu.edu/dept/courses/1021/Redesign)
-2003-2004 | **Undergraduate tutor**, tutored students at Scotlandville Magnet High School in algebra
+2005 - 2007 | **Undergraduate tutor**, tutored college algebra, trigonometry and pre-calculus students in the [Roadmap 2 Redesign Program](https://www.math.lsu.edu/dept/courses/1021/Redesign)
+2003 - 2004 | **Undergraduate tutor**, tutored students at Scotlandville Magnet High School in algebra
