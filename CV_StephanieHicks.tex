@@ -134,7 +134,7 @@ Boston, MA 02215 USA   & website: \href{www.stephaniehicks.com}{stephaniehicks.c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Research Interests}
-My research interests focus around developing statistical methods and tools in application for genomics and epigenomics data. Currently, I am focused on methods for processing and analyzing DNA methylation and gene expression using microarrays and next-generation sequencing. 
+My research interests focus around developing statistical methods and tools in application for genomics data. Currently, I am focused on methods for processing and analyzing DNA methylation and gene expression using microarrays and next-generation sequencing. 
 
 %\section{Teaching Interests}
 %In addition to teaching traditional probability and statistics courses, I am particularly interested in developing more diverse courses in a Statistics or Biostatistics department with the goal of teaching statistical methods and tools for reproducible and replicable research to meet the growing demand of data scientists by offering modern courses targeted at individuals wanting to learn how to become a data scientist. 
@@ -211,7 +211,7 @@ My research interests focus around developing statistical methods and tools in a
 \section{Research}  
 \textbf{Journal Articles}
 \begin{enumerate}[label= {[\arabic*]}]
-
+\item {\bf Hicks SC}. (2014). When Women in Statistics Come to Know Their Power. {\it Chance} {\bf 27}. 
 \item Liang MK, Li LT, Nguyen MT, Berger RL, {\bf Hicks SC}, Kao LS. (2014). Abdominal reoperation and mesh explantation following open ventral hernia repair with mesh. {\it Am J Surg} [Epub ahead of print] PMID: 25241955. 
 \item Liang MK, Berger RL, Nguyen MT, {\bf Hicks SC}, Li LT, Leong M. (2014). Outcomes with Porcine Acellular Dermal Matrix versus Synthetic Mesh and Suture in Complicated Open Ventral Hernia Repair. {\it Surg Infect} [Epub ahead of print] PMID: 25215466. 
 \item Berger RL, Li LT, {\bf Hicks SC}, Liang MK. (2014). Suture versus preperitoneal polypropylene mesh for elective umbilical hernia repairs. {\it J Surg Res} [Epub ahead of print] PMID: 24980854 
@@ -247,8 +247,9 @@ My research interests focus around developing statistical methods and tools in a
 \textbf{Conference Oral Presentations} 
 \begin{enumerate}[label= {[\arabic*]}]
 	\item {\bf Hicks SC}, Irizarry R. quantro: When should you use quantile normalization? Flashlight talk at \emph{Bioconductor Conference}. 2014 July 30-August 1. Boston, MA. 
-	\item {\bf Hicks S}, Plon SE, Kimmel M. Modeling Discovery Of Functional SNPs From Genome Scale Data. Oral presentation: \emph{Joint Statistical Meetings}. 2011 Aug 5. Miami, FL. 
-	\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Oral presentation: \emph{Human Genome Variation Society's Exploring the Functional Consequences of Genomic Variation Meeting}. 2010 Nov 1. Washington, D.C.
+	\item {\bf Hicks S}, Plon SE, Kimmel M. Modeling Discovery Of Functional SNPs From Genome Scale Data. \emph{Joint Statistical Meetings}. 2011 Aug 5. Miami, FL. 
+	\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. \emph{Human Genome Variation Society's Exploring the Functional Consequences of Genomic Variation Meeting}. 2010 Nov 1. Washington, D.C.
+	
 \end{enumerate}
 
 
@@ -282,26 +283,6 @@ My research interests focus around developing statistical methods and tools in a
 %\vskip .2in
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section{Grants and Awards}
-\vskip -0.25in
-\begin{table}[h]
-\begin{tabular}{ll}
-2014 & Travel award for the Women in Statistics Conference 2014 \\
-2011 & Travel and tuition award for the 16th Annual Summer  Institute in Statistical Genetics \\ 
-& at University of Washington (Population Genetics, Coalescent Theory modules) \\
-2008 - 2011 & NIH T32 Training Grant Fellow, Rice University \\
-2007 & Inducted into Phi Beta Kappa \\
-2007 & LSU Austin Chapter Scholarship Award \\
-2005 - 2007 & LA-STEM Research Scholars, LSU \\
-2004 - 2005 & HMM Professors Program, LSU \\
-2003 - 2007 & TOPS Tuition Award, LSU \\
-\end{tabular}
-\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% Teaching Experience %%%%%%%%%%%%%%%%
@@ -309,7 +290,7 @@ My research interests focus around developing statistical methods and tools in a
 
 
 \section{Teaching Experience}
-\vskip -.25in
+\vskip -.30in
 \begin{table}[h]
 \begin{tabular}{ll}
 2014 & \textbf{Lead Teaching Fellow}, \href{http://cs109.github.io/2014/}{Data Science (Harvard - CS109)} \\
@@ -347,31 +328,44 @@ My research interests focus around developing statistical methods and tools in a
 %
 
 
-        
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% Software %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \section{Software}
-\vskip -0.30in
+\textbf{Bioconductor and Github}
+\begin{enumerate}[label= {[\arabic*]}]
+\item \textit{quantro}: An R-package that can be used to test for differences between groups of distributions to guide the choice if quantile normalization should be used [\href{http://www.bioconductor.org/packages/release/bioc/html/quantro.html}{Available on Bioconductor}]
+\item \textit{quantroSim}: A supporting data simulation R-package for the \textit{quantro} R-package 
+to simulate gene expression and DNA methylation data  [\href{https://github.com/stephaniehicks/quantroSim}{Available on Github}] 
+\item \textit{postMUT}: A tool implemented in Perl and R to predict the functionality of missense mutations [\href{https://github.com/stephaniehicks/postMUT}{Available on Github}]
+\end{enumerate}     
+  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Grants and Awards}
+\vskip -0.25in
 \begin{table}[h]
-\begin{tabular}{l}
-\textit{quantro}: An R-package that can be used to test for differences between groups of distributions to \\
- \hspace{0.5in} guide the choice if quantile normalization should be used [\href{http://www.bioconductor.org/packages/release/bioc/html/quantro.html}{Available on Bioconductor}]\\
-\textit{epigenomeSim}: An R-package to simulate data from the epigenome including gene expression \\
-\hspace{0.5in} and DNA methylation data \\
-\textit{postMUT}: A tool implemented in Perl and R to predict the functionality of missense mutations \\
-\textit{IBD2cond}: A tool implemented in Perl and R to predict regions of IBD in siblings \\
+\begin{tabular}{ll}
+2014 & Travel award for the Women in Statistics Conference 2014 \\
+2011 & Travel and tuition award for the 16th Annual Summer  Institute in Statistical Genetics \\ 
+& at University of Washington (Population Genetics, Coalescent Theory modules) \\
+2008 - 2011 & NIH T32 Training Grant Fellow, Rice University \\
+2007 & Inducted into Phi Beta Kappa \\
+2007 & LSU Austin Chapter Scholarship Award \\
+2005 - 2007 & LA-STEM Research Scholars, LSU \\
+2004 - 2005 & HMM Professors Program, LSU \\
+2003 - 2007 & TOPS Tuition Award, LSU \\
 \end{tabular}
 \end{table}
 
 
 
-
-
-   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% Service %%%%%%%%%%%%%%%%%%

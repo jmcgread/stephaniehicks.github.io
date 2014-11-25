@@ -7,13 +7,14 @@ title: Research
 [github](https://github.com/stephaniehicks)  
 
 #### Research Interests
-My research interests focus around developing statistical methods and tools in application for genomics and epigenomics data. Currently, I am focused on methods for processing and analyzing DNA methylation and gene expression using microarrays and next-generation sequencing. Here are a few software packages and data packages that I have authored:
+My research interests focus around developing statistical methods and tools in application for genomics data. Currently, I am focused on methods for processing and analyzing DNA methylation and gene expression using microarrays and next-generation sequencing. Here are a few software packages and data packages that I have authored:
 
 
 #### Software
 
 - [R/quantro](http://www.bioconductor.org/packages/release/bioc/html/quantro.html): R package available on Bioconductor to test for global differences between groups of distributions to decide when to use quantile normalization.
-- [R/epigenomeSim](https://github.com/stephaniehicks/epigenomeSim): R package package is to simulate data from the epigenome including gene expression and DNA methylation.
+- [R/quantroSim](https://github.com/stephaniehicks/quantroSim): Supporting data simulation R-package for the \texttt{quantro} R-package 
+to simulate gene expression and DNA methylation data.
 - [postMUT](https://github.com/stephaniehicks/postMUT): A tool implemented in Perl and R to predict the functionality of missense mutations.
 
 
