@@ -5,7 +5,7 @@ title: Teaching
 
 #### Department of Biostatistics, Dana-Farber Cancer Institute and
 
-#### Department of Biostatistics, Harvard School of Public Health
+#### Department of Biostatistics, Harvard T.H. Chan School of Public Health
 
 2014 | **Lead Teaching Fellow**, [Data Science (CS109)](http://cs109.github.io/2014/), Harvard University 
 | *Supervised and guided 25 teaching fellows with over 300 students in the course. Developed course material, homework and solutions. Held weekly lab sections.*
