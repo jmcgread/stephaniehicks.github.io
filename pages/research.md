@@ -22,3 +22,7 @@ to simulate gene expression and DNA methylation data.
 
 - [myAffyData](https://github.com/stephaniehicks/mycAffyData): AffyBatch object from an experiement using P493-6 cells expressing low or high levels of c-Myc. Data from Loven et al. (2012) Cell 151: 476-482.
 - [BackgroundExperimentYeast](https://github.com/stephaniehicks/BackgroundExperimentYeast): AffyBatch object from an experiment to measure NSB and optical noise in yeast.
+
+#### Talks
+
+- [Why Statistics Matters in the Analysis of Genomics Data](https://speakerdeck.com/stephaniehicks/why-statistics-matters-in-the-analysis-of-genomics-data): Presented at the LSU Computational Biology seminar and the LSUConnect event in Feb 2015. 
