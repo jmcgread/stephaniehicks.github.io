@@ -15,6 +15,7 @@ My research interests focus around developing statistical methods and tools in a
 - [R/quantro](http://www.bioconductor.org/packages/release/bioc/html/quantro.html): R package available on Bioconductor to test for global differences between groups of distributions to decide when to use quantile normalization.
 - [R/quantroSim](https://github.com/stephaniehicks/quantroSim): Supporting data simulation R-package for the \texttt{quantro} R-package 
 to simulate gene expression and DNA methylation data.
+- [R/explainr](https://github.com/hilaryparker/explainr): translates S3 objects into text using standard templates in a simple and convenient way. 
 - [postMUT](https://github.com/stephaniehicks/postMUT): A tool implemented in Perl and R to predict the functionality of missense mutations.
 
 
