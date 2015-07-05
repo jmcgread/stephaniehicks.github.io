@@ -8,11 +8,10 @@ title: Teaching
 #### Department of Biostatistics, Harvard T.H. Chan School of Public Health
 
 2015 | **Teaching Assistant**, [Statistical Methods for Functional Genomics](http://meetings.cshl.edu/courses.aspx?course=c-data&year=15), Cold Spring Harbor Laboratories
-| Two week course. Contributed course material, gave a lecture, answered questions. 
+| Contributed course material, gave a lecture, answered questions. 
 2015 |**Contributor and Discussion Leader**, Harvard edX
-| (1) [Statistics and R for the Life Sciences](https://courses.edx.org/courses/HarvardX/PH525.1x/1T2015/info)
-(PH525.1x)} 
-| (2) [Case study: DNA methylation data analysis](https://courses.edx.org/courses/HarvardX/PH525.8x/1T2015/info) (PH525.8x)} 
+| (1) [Statistics and R for the Life Sciences](https://courses.edx.org/courses/HarvardX/PH525.1x/1T2015/info) (PH525.1x)
+| (2) [Case study: DNA methylation data analysis](https://courses.edx.org/courses/HarvardX/PH525.8x/1T2015/info) (PH525.8x)
 | Contributed course material, created screencasts, developed assessments, answered questions
 | All course material available on* [github](http://genomicsclass.github.io/book/pages/classes.html)
 | Courses taught by Rafael Irizarry with teaching assistant Mike Love 
