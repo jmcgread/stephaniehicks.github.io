@@ -7,7 +7,7 @@ title: Research
 [github](https://github.com/stephaniehicks)  
 
 #### Research Interests
-My research interests focus around developing statistical methods and tools in application for genomics data. Currently, I am focused on methods for processing and analyzing DNA methylation and gene expression using microarrays and next-generation sequencing. Here are a few software packages and data packages that I have authored:
+My research interests are focused on developing statistical methods, tools and software for the analysis of genomics data. Specifically, my research addresses statistical and computational challenges in functional genomics such as the pre-processing, normalization, analysis of raw high-throughput data (microarray and next-generation sequencing) leading to an improved quantification and understanding of biological variability. Here are a few software packages and data packages that I have authored:
 
 
 #### Software
