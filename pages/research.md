@@ -5,7 +5,7 @@ title: Research
 
 [Google Scholar](http://scholar.google.com/citations?user=4T4qnL4AAAAJ) &nbsp; | &nbsp; 
 [github](https://github.com/stephaniehicks)  &nbsp; | &nbsp; 
-[ORCID](orcid.org/0000-0002-7858-0231)
+[ORCID](http://orcid.org/0000-0002-7858-0231)
 
 #### Research Interests
 My research interests are focused on developing statistical methods, tools and software for the analysis of genomics data. Specifically, my research addresses statistical and computational challenges in functional genomics such as the pre-processing, normalization, analysis of raw high-throughput data (microarray and next-generation sequencing) leading to an improved quantification and understanding of biological variability. Here are a few software packages and data packages that I have authored:
