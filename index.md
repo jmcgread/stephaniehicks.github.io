@@ -12,7 +12,7 @@ I received my B.S. in [Mathematics](https://www.math.lsu.edu) from [LSU](https:/
 
 #### For more information:
 
-<img style="float: right;" src="https://raw.githubusercontent.com/stephaniehicks/stephaniehicks.github.io/master/assets/5278d45LR.jpg"> <br>
+<img style="float: right;width:200px;height:250px;" src="https://raw.githubusercontent.com/stephaniehicks/stephaniehicks.github.io/master/assets/5278d45LR.jpg"> <br>
 
 - [email: shicks [at] jimmy [dot] harvard [dot] edu](mailto:shicks@jimmy.harvard.edu)
 - [twitter: @stephaniehicks](https://twitter.com/stephaniehicks)
