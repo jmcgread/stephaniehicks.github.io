@@ -7,6 +7,8 @@ title: Teaching
 
 #### Department of Biostatistics, Harvard T.H. Chan School of Public Health
 
+2016 | **Co-instructor**, Introduction to Data Science ([HSPH - BIO 260](http://datasciencelabs.github.io/2016/)) 
+| Co-taught lectures with Rafael Irizarry, developed course material 
 2015 | **Teaching Assistant**, [Statistical Methods for Functional Genomics](http://meetings.cshl.edu/courses.aspx?course=c-data&year=15), Cold Spring Harbor Laboratories
 | Contributed course material, gave a lecture, answered questions. 
 2015 |**Contributor and Discussion Leader**, Harvard edX
