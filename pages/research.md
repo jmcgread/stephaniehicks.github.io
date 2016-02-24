@@ -8,7 +8,7 @@ title: Research
 [ORCID](http://orcid.org/0000-0002-7858-0231)
 
 #### Research Interests
-My research interests are focused on developing statistical methods, tools and software for the analysis of genomics data. Specifically, my research addresses statistical and computational challenges in functional genomics such as the pre-processing, normalization, analysis of raw high-throughput data (microarray and next-generation sequencing) leading to an improved quantification and understanding of biological variability. Here are a few software packages and data packages that I have authored:
+My research interests are focused on developing statistical methods, tools and software for the analysis of genomics data, which often contains noisy or missing data and systematic biases. Specifically, my research addresses statistical and computational challenges in functional genomics such as the pre-processing, normalization, analysis of raw high-throughput data (microarray and next-generation sequencing) leading to an improved quantification and understanding of biological variability. Some of my previous and current work has involved statistical methods for inferring latent variables using genomic data including EM algorithms. Here are a few software packages and data packages that I have authored:
 
 
 #### Software
