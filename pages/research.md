@@ -27,6 +27,8 @@ to simulate gene expression and DNA methylation data.
 - [myAffyData](https://github.com/stephaniehicks/mycAffyData): AffyBatch object from an experiment using P493-6 cells expressing low or high levels of c-Myc. Data from Loven et al. (2012) Cell 151: 476-482.
 - [BackgroundExperimentYeast](https://github.com/stephaniehicks/BackgroundExperimentYeast): AffyBatch object from an experiment to measure NSB and optical noise in yeast.
 
-#### Talks
+#### Invited Talks
 
+- [On the widespread and critical impact of systemic bias and batch effects in single-cell RNA-seq data](http://hsci.harvard.edu/event/widespread-and-critical-impact-systemic-bias-and-batch-effects-single-cell-rna-seq-data?delta=0). Presented at the [Boston Single-Cell Network Meeting](http://hsci.harvard.edu/calendar/upcoming/event-type/boston-single-cell-network-meeting) in March 2016. 
 - [Why Statistics Matters in the Analysis of Genomics Data](https://speakerdeck.com/stephaniehicks/why-statistics-matters-in-the-analysis-of-genomics-data) ([Youtube video](https://www.youtube.com/watch?v=3EVtJPz4kCI)): Presented at the LSU Computational Biology seminar and the LSUConnect event in Feb 2015. 
+- Normalization of DNA methylation and Gene Expression Data in the Context of Global Variation. Presented at the Bioinformatics Meeting, Division of Immunology, Harvard Medical School in Sept 2014. 
