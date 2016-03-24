@@ -29,4 +29,4 @@ to simulate gene expression and DNA methylation data.
 
 #### Talks
 
-- [Why Statistics Matters in the Analysis of Genomics Data](https://speakerdeck.com/stephaniehicks/why-statistics-matters-in-the-analysis-of-genomics-data): Presented at the LSU Computational Biology seminar and the LSUConnect event in Feb 2015. 
+- [Why Statistics Matters in the Analysis of Genomics Data](https://speakerdeck.com/stephaniehicks/why-statistics-matters-in-the-analysis-of-genomics-data) ([Youtube video](https://www.youtube.com/watch?v=3EVtJPz4kCI)): Presented at the LSU Computational Biology seminar and the LSUConnect event in Feb 2015. 
