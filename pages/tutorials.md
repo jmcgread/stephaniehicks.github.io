@@ -18,3 +18,6 @@ Here are a few tutorials I have authored:
 
 ### Genomics
 - [Mapping Whole Genome Bisulfite Sequencing data](https://github.com/genomicsclass/colonCancerWGBS/blob/master/scripts/createObject.Rmd): Tutorial on how to convert WGBS fastq files into R. Includes quality control. Created for [Harvard edX PH525.8x](https://courses.edx.org/courses/HarvardX/PH525.8x/1T2015/info). 
+
+### Odds and Ends
+- [General advice on following an academic career path](https://github.com/stephaniehicks/classroomNotes/blob/master/academicJobNotes.md): Contains resources and notes that I've gathered about following an academic career path (from being a graduate student and postdoctoral fellow to faculty). I should preface this by stating this advice is geared towards an applied statistics/genomics field, but I think most of it applies to a broader set of fields. 
