@@ -13,6 +13,7 @@ My research interests are focused on developing statistical methods, tools and s
 
 #### Software
 
+- [R/qsmooth](https://github.com/stephaniehicks/qsmooth): R package available on GitHub that implements a generalization of quantile normalization, referred to as smooth quantile normalization (**qsmooth**), which is based on the assumption that the statistical distribution of each sample should be the same (or have the same distributional shape) within biological groups or conditions. 
 - [R/quantro](http://www.bioconductor.org/packages/release/bioc/html/quantro.html): R package available on Bioconductor to test for global differences between groups of distributions to decide when to use quantile normalization.
 - [R/quantroSim](https://github.com/stephaniehicks/quantroSim): Supporting data simulation R-package for the *quantro* R-package 
 to simulate gene expression and DNA methylation data.
@@ -27,8 +28,7 @@ to simulate gene expression and DNA methylation data.
 - [myAffyData](https://github.com/stephaniehicks/mycAffyData): AffyBatch object from an experiment using P493-6 cells expressing low or high levels of c-Myc. Data from Loven et al. (2012) Cell 151: 476-482.
 - [BackgroundExperimentYeast](https://github.com/stephaniehicks/BackgroundExperimentYeast): AffyBatch object from an experiment to measure NSB and optical noise in yeast.
 
-#### Invited Talks
-
-- [On the widespread and critical impact of systemic bias and batch effects in single-cell RNA-seq data](http://hsci.harvard.edu/event/widespread-and-critical-impact-systemic-bias-and-batch-effects-single-cell-rna-seq-data?delta=0). Presented at the [Boston Single-Cell Network Meeting](http://hsci.harvard.edu/calendar/upcoming/event-type/boston-single-cell-network-meeting) in March 2016. 
-- [Why Statistics Matters in the Analysis of Genomics Data](https://speakerdeck.com/stephaniehicks/why-statistics-matters-in-the-analysis-of-genomics-data) ([Youtube video](https://www.youtube.com/watch?v=3EVtJPz4kCI)): Presented at the LSU Computational Biology seminar and the LSUConnect event in Feb 2015. 
+#### Invited Talks	
+- On the widespread and critical impact of systemic bias and batch effects in single-cell RNA-seq data. [Presented](http://hsci.harvard.edu/event/widespread-and-critical-impact-systemic-bias-and-batch-effects-single-cell-rna-seq-data?delta=0) at the [Boston Single-Cell Network Meeting](http://hsci.harvard.edu/calendar/upcoming/event-type/boston-single-cell-network-meeting) in March 2016 (Boston, MA, USA), [presented](https://www.amstat.org/meetings/jsm/2016/onlineprogram/MainSearchResults.cfm) at the Joint Statistical Meetings Aug 2016 (Chicago, IL, USA), and [presented](https://coursesandconferences.wellcomegenomecampus.org/events/item.aspx?e=596) at the Single-Cell Genomics Conference Sept 2016 (Hinxton, UK). 
+- [Why Statistics Matters in the Analysis of Genomics Data](https://speakerdeck.com/stephaniehicks/why-statistics-matters-in-the-analysis-of-genomics-data) ([Youtube video](https://www.youtube.com/watch?v=3EVtJPz4kCI)). Presented at the LSU Computational Biology seminar and the LSUConnect event in Feb 2015. 
 - Normalization of DNA methylation and Gene Expression Data in the Context of Global Variation. Presented at the Bioinformatics Meeting, Division of Immunology, Harvard Medical School in Sept 2014. 
