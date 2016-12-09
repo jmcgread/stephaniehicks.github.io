@@ -17,6 +17,7 @@ Here are a few tutorials I have authored:
 - [learnPython](http://stephaniehicks.github.io/learnPython/): Learn the basics of programming in Python and performing data analyses in Python
 
 ### Genomics
+- [Correcting batch effects and technical biases in scRNA-Seq data](https://github.com/hms-dbmi/scw/tree/master/scw2016/tutorials/batcheffects). Presented at the [2016 HSCI Single-Cell Workshop](http://hsci.harvard.edu/event/save-date-single-cell-analysis-workshop) on Nov 30, 2016 at Harvard Medical School
 - [Mapping Whole Genome Bisulfite Sequencing data](https://github.com/genomicsclass/colonCancerWGBS/blob/master/scripts/createObject.Rmd): Tutorial on how to convert WGBS fastq files into R. Includes quality control. Created for [Harvard edX PH525.8x](https://courses.edx.org/courses/HarvardX/PH525.8x/1T2015/info). 
 
 ### Odds and Ends
