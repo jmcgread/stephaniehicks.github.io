@@ -23,7 +23,8 @@ to simulate gene expression and DNA methylation data.
 
 #### Data Packages
 
--[patel2014gliohuman](https://github.com/willtownes/patel2014gliohuman): R data package that contains a SummarizedExpression object from Patel et al. (2014) with single cell and bulk RNA-Seq data on five human glioblastoma tumors. 
+- [trapnell2014myoblasthuman](https://github.com/stephaniehicks/trapnell2014myoblasthuman): R data package that contains an ExpressionSet object from Trapnell et al. (2014) that performed a time-series experiment of bulk and single cell RNA-Seq at four time points in differentiated primary human myoblasts. 
+- [patel2014gliohuman](https://github.com/willtownes/patel2014gliohuman): R data package that contains a SummarizedExpression object from Patel et al. (2014) with single cell and bulk RNA-Seq data on five human glioblastoma tumors. 
 - [bodymapRat](https://github.com/stephaniehicks/bodymapRat): R data package that contains an ExpressionSet from the Yu et al. (2013) paper that performed the rat BodyMap across 11 organs and 4 developmental stage (PMID: 24510058). 
 - [colonCancerWGBS](https://github.com/genomicsclass/colonCancerWGBS): Cov files produced from [Bismark](http://www.bioinformatics.babraham.ac.uk/projects/bismark/) after mapping six paired tumor-normal WGBS samples from Ziller et al. (2013) PMID: 23925113. Only chr22. 
 - [myAffyData](https://github.com/stephaniehicks/mycAffyData): AffyBatch object from an experiment using P493-6 cells expressing low or high levels of c-Myc. Data from Loven et al. (2012) Cell 151: 476-482.
