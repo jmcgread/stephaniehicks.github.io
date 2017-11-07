@@ -12,7 +12,7 @@ My research interests are focused on developing statistical methods, tools and s
 
 
 #### Software
-
+- [R/methylCC](https://github.com/stephaniehicks/methylCC): R package available on GitHub to estimate the cell composition of whole blood in DNA methylation samples in microarray or sequencing platforms
 - [R/qsmooth](https://github.com/stephaniehicks/qsmooth): R package available on GitHub that implements a generalization of quantile normalization, referred to as smooth quantile normalization (**qsmooth**), which is based on the assumption that the statistical distribution of each sample should be the same (or have the same distributional shape) within biological groups or conditions. 
 - [R/quantro](http://www.bioconductor.org/packages/release/bioc/html/quantro.html): R package available on Bioconductor to test for global differences between groups of distributions to decide when to use quantile normalization.
 - [R/quantroSim](https://github.com/stephaniehicks/quantroSim): Supporting data simulation R-package for the *quantro* R-package 
