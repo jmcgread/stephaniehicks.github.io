@@ -1,8 +1,8 @@
 stephaniehicks.github.io
 ========================
 
-This is my GitHub website which I plan to use to post lists of useful tutorials and tools. I am a postdoc in the [@rafalab](http://rafalab.dfci.harvard.edu) in the [Department of Biostatistics and Computational Biology](http://bcb.dfci.harvard.edu) at [Dana-Farber Cancer Institute](http://www.dana-farber.org) and [Harvard School of Public Health](http://www.hsph.harvard.edu/biostatistics/).  
+This is my GitHub website. I am an Assistant Professor in the [Department of Biostatistics](https://www.jhsph.edu/departments/biostatistics/) at [Johns Hopkins Bloomberg School of Public Health](https://www.jhsph.edu). I'm also a faculty member of the [Johns Hopkins Data Science Lab](http://jhudatascience.org) and co-founder of [R-Ladies Baltimore](https://www.meetup.com/rladies-baltimore/). 
 
-My research interests focus around developing statistical methods and tools in application for genomics and epigenomics data. Currently, I am focused on methods for processing and analyzing DNA methylation and gene expression using microarrays and next-generation sequencing.
+I develop statistical methods, tools and software for the analysis of genomics data. Specifically, my research addresses statistical challenges in epigenomics, functional genomics and single-cell genomics such as the pre-processing, normalization, analysis of raw, noisy high-throughput data (microarray and next-generation sequencing) leading to an improved quantification and understanding of biological variability. 
 
 For more information, check out [stephaniehicks.com](http://stephaniehicks.com) or follow me on Twitter at [@stephaniehicks](http://twitter.com/stephaniehicks).
