@@ -4,14 +4,16 @@
 \usepackage{paralist} % This gives us fun enumeration environments. compactitem will be nice.
 \usepackage{enumitem}
 
+\setlist[enumerate]{wide=0pt, widest=99,leftmargin=\parindent, labelsep=*,labelindent=5pt,labelwidth=50pt,leftmargin=! } 
+
 \reversemarginpar % Layout: Puts the section titles on left side of page
 
 %% Use these lines for letter-sized paper
 \usepackage[paper=letterpaper,
-            %includefoot, % Uncomment to put page number above margin
-            marginparwidth=1.0in,     % Length of section titles
+            includefoot, % Uncomment to put page number above margin
+            marginparwidth=0.8in,     % Length of section titles
             marginparsep=.05in,       % Space between titles and text
-            margin=.70in,               % 1 inch margins
+            margin=.50in,               % 1 inch margins
             includemp]{geometry}
 
 \setlength{\parindent}{0in} %% More layout: Get rid of indenting throughout entire document
@@ -109,9 +111,9 @@
 \newlength{\rcollength}\setlength{\rcollength}{2.05in}%
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-\href{https://www.jhsph.edu/departments/biostatistics/}{Department of Biostatistics} & \\
+\href{https://www.jhsph.edu/departments/biostatistics/}{Department of Biostatistics} & email: \href{mailto:shicks19@jhu.edu}{shicks19@jhu.edu} \\
 \href{https://www.jhsph.edu}{Johns Hopkins Bloomberg School of Public Health} & twitter: \href{https://twitter.com/stephaniehicks}{@stephaniehicks} \\ 
-615 North Wolfe Street  & email: \href{mailto:shicks19@jhu.edu}{shicks19@jhu.edu} \\ %Fax: 713.348.5476  \\
+615 North Wolfe Street  &  github: stephaniehicks \\ 
 Baltimore, MD 21205-2179 USA & website: \href{http://www.stephaniehicks.com}{stephaniehicks.com} 
 \end{tabular}
 
@@ -137,125 +139,105 @@ I develop statistical methods, tools and software for the analysis of genomics d
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
-\vskip -.25in
-\begin{table}[h]
-\begin{tabular}{cl}
-2013 & \textbf{PhD., Statistics}, Rice University, Houston, TX USA \\
-& \textit{Ph.D. Advisors: Marek Kimmel, Ph.D. (Statistics - Rice) and } \\
-& \hspace{0.90in} \textit{  Sharon Plon, M.D., Ph.D. (Baylor College of Medicine, TX Children's) } \\
-& \textit{Dissertation: Probabilistic Models for Genetic and Genomic Data with Missing Information} \\
-& \\
-2012 & \textbf{M.A., Statistics}, Rice University, Houston, TX USA \\
-& \\
-2007 & \textbf{B.S., Mathematics}, Louisiana State University, Baton Rouge, LA USA \\
-&  \textit{magna cum laude}, Phi Beta Kappa 
-\end{tabular}
-\end{table}
+\begin{enumerate}
+\item[2013]  \textbf{PhD., Statistics}, Rice University, Houston, TX USA \\
+	\textit{Ph.D. Advisors: Marek Kimmel, Ph.D. (Statistics - Rice) and Sharon Plon, M.D., Ph.D. (Baylor College of Medicine, TX Children's)  } \\
+	\textit{Dissertation: Probabilistic Models for Genetic and Genomic Data with Missing Information} 
+\item[2012]  \textbf{M.A., Statistics}, Rice University, Houston, TX USA 
+\item[2007]  \textbf{B.S., Mathematics}, Louisiana State University, Baton Rouge, LA USA \\
+	\textit{magna cum laude}, Phi Beta Kappa \label{last-item}
+\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% Professional Experience %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip -.35in
-\section{Professional Experience}
-\vskip -.1in
-\begin{table}[h]
-\begin{tabular}{ll}
-2018- & \textbf{Assistant Professor}, Baltimore, MD  \\
-& Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health \\ 
-& \\ 
-2013-2018 & \textbf{Postdoctoral Research Fellow}, Boston, MA   \\
-& Department of Biostatistics and Computational Biology, Dana-Farber Cancer Institute \\
-& Department of Biostatistics, Harvard T.H. Chan School of Public Health \\
-& \textit{Mentor: Rafael Irizarry, Ph.D.} \\
-& \textit{K99/R00 Co-mentors: Franziska Michor, Ph.D. and Bradley Bernstein, M.D, Ph.D} \\
-& \\
-%06/2013 & \textbf{Research Staff}, Rice University, Houston, TX \\
-%& \\
-2007-2013 &  \textbf{Graduate Student Researcher}, Houston, TX \\
-& Rice University \\ 
-& \textit{Ph.D. Advisors: Marek Kimmel and Sharon Plon} \\
-& \\
-2006 &  \textbf{Undergraduate Researcher (REU)}, Statistics, University of Wisconsin, Madison, WI \\
-& \textit{Mentors: Murray  Clayton and Jo Handelsman} \\
-& \\
-2005 &  \textbf{Undergraduate Researcher (REU)}, Statistics,  Rice University, Houston, TX  \\
-& \textit{Mentor: Javier Rojo} \\
-& \\
-%2005-2007 &  \textbf{Undergraduate Researcher}, Psychology, LSU, Baton Rouge, LA  \\
-%& \textit{Mentor: Robert Mathews} \\
-%& \\
-2005-2007 &  \textbf{Undergraduate Tutor}, Roadmap 2 Redesign Program, LSU, Baton Rouge, LA \\
-& \textit{ Tutored college algebra, trigonometry and pre-calculus students.} \\
-% & \\
-%2003 - 2004 &  \textbf{Undergraduate Tutor}, LSU, Baton Rouge, LA \\
-%& \textit{ Tutored students at Scotlandville Magnet High School in algebra for 3hrs/week. } \\
-\end{tabular}
-\end{table}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
- \vskip -.15in
-\section{Grants and Fellowships}
-\vskip -0.25in
-\begin{table}[h]
-\begin{tabular}{ll}
-2017 - 2021 & NIH/NHGRI K99/R00 Pathway to Independence Award - Statistical  \\
-& Methods for the Normalization and Quantification of Single-Cell \\ 
-& RNA-Sequencing Data,  Dana-Farber Cancer Institute / HSPH \\
-2009 - 2011 & NIH/NCI T32 Predoctoral Training Program in Biostatistics, Rice University \\ 
-2005 - 2007 & LA-STEM Research Scholars, LSU \\
-2004 - 2005 & HMMI Professors Program, LSU \\
-\end{tabular}
-\end{table}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% Awards %%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newpage
-
 \vskip -.15in
-\section{Honors and Awards}
-\vskip -0.25in
-\begin{table}[h]
-\begin{tabular}{ll}
-2017 & Travel award from the \href{https://cwstat.org}{Caucus for Women in Statistics (CWS)} to attend \\ 
-& the \href{https://ww2.amstat.org/meetings/jsm/2017/}{2017 Joint Statistical Meetings} in Baltimore, MD, USA \\
-2017 & Travel award for the Ascona Workshop 2017 on \\ 
-& \href{https://www.bsse.ethz.ch/cbg/cbg-news/ascona-2017.html}{Statistical Challenges in Single-Cell Biology} in Ascona, Switzerland \\
-2016 & Travel award for the Women in Statistics and Data Science Conference 2016 in NC, USA \\
-2015 & Stellar Abstract Award for the 2015 PQG Conference in Boston, MA, USA \\
-2015 & Travel award for the Genome Informatics Meeting 2015 at CSHL \\
-2014 & Travel award for the Women in Statistics Conference 2014 in NC, USA \\
-2011 & Travel and tuition award for the 16th Annual Summer  Institute in Statistical Genetics \\ 
-& at University of Washington (Population Genetics, Coalescent Theory modules) \\
-2007 & Inducted into Phi Beta Kappa \\
-2007 & LSU Austin Chapter Scholarship Award \\
-2003 - 2007 & TOPS Tuition Award, LSU 
-\end{tabular}
-\end{table}
+\section{Professional Positions}
+%
+\begin{enumerate}
+\item[2018 - ] \textbf{Assistant Professor}, Baltimore, MD  \\
+Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health 
+\item[2013 - 2018]  \textbf{Postdoctoral Research Fellow}, Boston, MA   \\
+ Department of Biostatistics and Computational Biology, Dana-Farber Cancer Institute \\
+ Department of Biostatistics, Harvard T.H. Chan School of Public Health \\
+ \textit{Mentor: Rafael Irizarry, Ph.D.} \\
+\textit{K99/R00 Co-mentors: Franziska Michor, Ph.D. and Bradley Bernstein, M.D, Ph.D} 
+
+\item[2007 - 2013]  \textbf{Graduate Student Researcher}, Houston, TX \\
+ Rice University \\ 
+ \textit{Ph.D. Advisors: Marek Kimmel and Sharon Plon} 
+
+\item[2006]  \textbf{Undergraduate Researcher (REU)}, Statistics, University of Wisconsin, Madison, WI \\
+ \textit{Mentors: Murray  Clayton and Jo Handelsman} 
+
+\item[2005]  \textbf{Undergraduate Researcher (REU)}, Statistics,  Rice University, Houston, TX  \\
+ \textit{Mentor: Javier Rojo} 
+% \item[2005 - 2007]   \textbf{Undergraduate Researcher}, Psychology, LSU, Baton Rouge, LA  \\
+% \textit{Mentor: Robert Mathews} 
+
+\item[2005 - 2007]  \textbf{Undergraduate Tutor}, Roadmap 2 Redesign Program, LSU, Baton Rouge, LA \\
+ \textit{ Tutored college algebra, trigonometry and pre-calculus students} \label{last-item}
+% \item[2003 - 2004]  \textbf{Undergraduate Tutor}, LSU, Baton Rouge, LA \\
+% \textit{ Tutored students at Scotlandville Magnet High School in algebra for 3hrs/week. } 
+\end{enumerate}
+
+\vskip .15in   
+\textbf{Additional Professional Appointments}
+\begin{enumerate}[labelwidth=70pt]
+\item[2018 - Present] Faculty member, \href{http://jhudatascience.org}{Johns Hopkins Data Science Lab}
+\end{enumerate}
+
+
+\vskip .15in   
+\textbf{Professional Societies} 
+\begin{enumerate}[labelwidth=70pt]
+\item[2017 - Present] Member, Caucus for Women in Statistics (CWS) 
+\item[2007 - Present] Member, American Statistical Association (ASA) 
+\item[2007 - Present] Member, American Mathematical Society (AMS)
+\item[2007 - 2013] Member, American Society of Human Genetics (ASHG)
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Honors and Awards %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip -.15in
+\section{Honors $\&$ Awards}
+\begin{enumerate}
+\item[2017] Travel award from the \href{https://cwstat.org}{Caucus for Women in Statistics (CWS)} to attend the \href{https://ww2.amstat.org/meetings/jsm/2017/}{2017 Joint Statistical Meetings} in Baltimore, MD, USA 
+\item[2017] Travel award for the Ascona Workshop 2017 on \href{https://www.bsse.ethz.ch/cbg/cbg-news/ascona-2017.html}{Statistical Challenges in Single-Cell Biology} in Ascona, Switzerland 
+\item[2016] Travel award for the Women in Statistics and Data Science Conference 2016 in NC, USA 
+\item[2015] Stellar Abstract Award for the 2015 PQG Conference in Boston, MA, USA 
+\item[2015] Travel award for the Genome Informatics Meeting 2015 at CSHL 
+\item[2014] Travel award for the Women in Statistics Conference 2014 in NC, USA 
+\item[2011] Travel and tuition award for the 16th Annual Summer  Institute in Statistical Genetics at University of Washington (Population Genetics, Coalescent Theory modules) 
+\item[2007] Phi Beta Kappa Society
+\item[2007] LSU Austin Chapter Scholarship Award 
+\item[2003 - 2007] TOPS Tuition Award, LSU 
+\end{enumerate}
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% Publications %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip -.2in
-\section{Research}  
+\vskip -.15in
+\section{Publications}  \\
+
 \textbf{Pre-prints}
-\begin{enumerate}[label= {[\arabic*]}]
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
 \item {\bf Hicks SC}, Irizarry RA. (2017). Technology-independent estimation of cell type composition using differentially methylated regions. {\it bioRxiv}. doi: \url{https://doi.org/10.1101/213769}. 
 \item Townes FW, {\bf Hicks SC}, Ayree MJ Irizarry RA. (2017). Varying-Censoring Aware Matrix Factorization for Single Cell RNA-Sequencing. {\it bioRxiv}. doi: \url{https://doi.org/10.1101/166736}. 
 \item Kumar MS, Slud EV, Okrah K, {\bf Hicks SC}, Hannenhalli S, Corrada Bravo H. (2017). Analysis And Correction Of Compositional Bias In Sparse Sequencing Count Data. {\it bioRxiv}. doi: \url{https://doi.org/10.1101/142851}.
 \end{enumerate}
 
+\vskip .15in
 \textbf{Peer-reviewed Journal Articles}
-\begin{enumerate}[label= {[\arabic*]}]
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
 \item {\bf Hicks SC}, Townes FW, Teng M, Irizarry RA. (2017). Missing Data and Technical Variability in Single-Cell RNA-Sequencing Experiments. In press at {\it Biostatistics}. doi: \url{http://dx.doi.org/10.1101/025528}. 
 \item{\bf Hicks SC}, Irizarry RA. (2017). A Guide to Teaching Data Science. In press at {\it The American Statistician}. \url{http://dx.doi.org/10.1080/00031305.2017.1356747}. 
 \item {\bf Hicks SC}, Okrah K, Paulson JN, Quackenbush J, Irizarry RA, Corrada Bravo H. (2017). Smooth Quantile Normalization. In press at {\it Biostatistics}. doi: \url{http://dx.doi.org/10.1101/085175} 
@@ -266,7 +248,6 @@ I develop statistical methods, tools and software for the analysis of genomics d
 \item Berger RL, Li LT, {\bf Hicks SC}, Liang MK. (2014). Suture versus preperitoneal polypropylene mesh for elective umbilical hernia repairs. {\it J Surg Res} {\bf 192}: 426-431. PMID: 24980854 
 \item Brahmbhatt R, Carter SA, {\bf Hicks SC}, Berger DH, Liang MK. (2014). Identifying Risk Factors for Surgical Site Complications after Laparoscopic Ventral Hernia Repair: Evaluation of the Ventral Hernia Working Group Grading System. {\it Surg Infect (Larchmt)} {\bf 15}: 187-193. PMID: 24773169
 \item Carter SA, {\bf Hicks SC}, Brahmbhatt R, Liang MK. (2014). Recurrence and Pseudorecurrence after Laparoscopic Ventral Hernia Repair: Predictors and Patient-focused Outcomes. {\it Am Surg} {\bf 80}: 138-148. PMID: 24480213
-\item {\bf Hicks SC}. (2014). When Women in Statistics Come to Know Their Power. {\it Chance} {\bf 27}. 
 \item Li LT, {\bf Hicks SC}, Davila JA, Kao LS, Berger RL, Arita NA, Liang MK. (2014). Circular Closure is Associated with the Lowest Rate of Surgical Site Infection Following Stoma Reversal:A Systematic Review and Multiple Treatment Meta-analysis. {\it Colorectal Dis} {\bf 16}: 406-416. PMID: 24422861
 \item Li LT, Brahmbhatt R, {\bf Hicks SC}, Davila JA, Berger DH, Liang MK. (2014). Prevalence of Surgical Site Infection at the Stoma Site following Four Skin Closure Techniques: A Retrospective Cohort Study. {\it Dig Surg} {\bf 31}: 73-78. PMID: 24776653
 \item Li LT, Jafrani RJ, Becker NS, Berger RL,  {\bf Hicks SC}, Davila JA, Liang MK. (2014). Outcomes of acute versus elective primary ventral hernia repair. {\it J Trauma Acute Care Surg} {\bf 76}: 523-528. PMID: 24458061
@@ -282,35 +263,54 @@ I develop statistical methods, tools and software for the analysis of genomics d
 \item Neskey DM, Klein JD, {\bf Hicks S}, Garden AS, Bell DM, El-Naggar Ak, Kies MS, Weber RS, Kupferman ME. (2013). Prognostic Factors Associated With Decreased Survival in Patients With Acinic Cell Carcinoma. {\it JAMA Otolaryngol Head Neck Surg} {\bf 139}: 1195-1202. PMID: 24076756
 \item Nguyen MT, Li LT, {\bf Hicks SC}, Davila JA, Suliburk JW, Leong M, Kao LS, Berger DH, Liang MK. (2013). Readmission following open ventral hernia repair: incidence, indications, and predictors. {\it Am J Surg} {\bf 206}: 942-948. PMID: 24296099
 \item Subramanian A, Clapp ML, {\bf Hicks SC}, Awad SS, Liang MK. (2013). Laparoscopic ventral hernia repair: Primary versus secondary hernias. {\it J Surg Res} {\bf 181}: e1-5. PMID: 22795342.
-\item \textbf{Hicks S}, Plon SE, Kimmel M. (2013). Statistical Analysis of Missense Mutation Classifiers. {\it Hum Mut} {\bf 34}: 405-406. PMID: 23086893. 
 \item Cheung HC\footnote{ `Highly Accessed' on BioMed Central}, San Lucas FA, \textbf{Hicks S}, Chang K, Bertuch AA, Ribes-Zamora A. (2012). An S/T-Q cluster domain census unveils new putative targets under Tel1/Mec1 control. {\it BMC Genomics} {\bf 13}: 664. PMID: 23176708. 
-\item \textbf{Hicks S}\footnote{Cited and Discussed in Nature {\bf 482}: 257-262. 09 Feb 2012. PMID: 22318607}, Wheeler DE, Plon SE, Kimmel M. (2011). Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. {\it Hum Mut}. {\bf 32}: 661-668. PMID: 21480434.
+\item \textbf{Hicks S}\footnote{Cited and Discussed in Nature {\bf 482}: 257-262. 09 Feb 2012. PMID: 22318607}, Wheeler DE, Plon SE, Kimmel M. (2011). Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. {\it Human Mutation}. {\bf 32}: 661-668. PMID: 21480434.
+\end{enumerate}
+
+\vskip .15in 
+\textbf{Invited Editorials} 
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
+\item {\bf Hicks SC}. (2014). When Women in Statistics Come to Know Their Power. {\it Chance} {\bf 27}. 
+\end{enumerate}
+
+\vskip .15in 
+\textbf{Letters} 
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
+\item \textbf{Hicks S}, Plon SE, Kimmel M. (2013). Statistical Analysis of Missense Mutation Classifiers. {\it Hum Mut} {\bf 34}: 405-406. PMID: 23086893. 
+\end{enumerate}
+
+\vskip .15in
+\textbf{Ph.D. Dissertation}
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
+\item {\bf Hicks SC}. Probabilistic Models for Genetic and Genomic Data with Missing Information, Ph.D. Thesis, Rice University, 2013. 
 \end{enumerate}
 
 
 
-\vskip .2in
-\textbf{Invited Talks} 
-\begin{enumerate}[label= {[\arabic*]}]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Presentations  %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip -.15in
+\section{Presentations}  \\
 
+\textbf{Invited Talks} 
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
 \item \href{http://lorentzcenter.nl/lc/web/2018/986/info.php3?wsid=986&venue=Oort}{Single Cell Data Science: Making Sense of Data from Billions of Single Cells}. 2018 Jun 4-8. Lorentz Center, Leiden University, Netherlands. 
-	\item \href{https://www.mimuw.edu.pl/~szczurek/SingleCellContraITN}{CONTRA Innovative Training Network Workshop: Handling Single Cell data}. 2018 Sept 9-15. Hotel Sobieski, Warsaw, Poland. 
-	\item \href{https://github.com/stephaniehicks/introRandRStudio}{Introduction to R, RStudio and the ``Tidyverse"}. How It's Done Seminar in the Biostatistics and Computational Biology Department, DFCI. 2017 Sept 20. Boston, MA, USA. 
+\item \href{https://www.mimuw.edu.pl/~szczurek/SingleCellContraITN}{CONTRA Innovative Training Network Workshop: Handling Single Cell data}. 2018 Sept 9-15. Hotel Sobieski, Warsaw, Poland. 
 	\item Estimating cell type composition in whole blood using differentially methylated regions. \href{http://bioconductor.org/help/course-materials/2017/BioC2017/}{{\it Bioconductor Conference}}. 2017 Jul 26-28. Boston, MA, USA.  
         \item Setting the Stage for Reproducibility and Replicability in Science. 2017 Mar 22. Brandeis University, Waltham, MA, USA.
 	\item \href{https://github.com/hms-dbmi/scw/tree/master/scw2016/tutorials/batcheffects}{Batch effects and technical biases in scRNA-Seq data}. \href{http://hsci.harvard.edu/event/save-date-single-cell-analysis-workshop}{HSCI Single-Cell Workshop}. 2016 Nov 29-30. Harvard Medical School, Boston, MA, USA.  
 	\item \href{https://speakerdeck.com/stephaniehicks/towards-progress-in-batch-effects-and-biases-in-single-cell-rna-seq-data}{Towards progress in batch effects and biases in single-cell RNA-seq data}. \href{https://coursesandconferences.wellcomegenomecampus.org/events/item.aspx?e=596}{{\it Single-Cell Genomics Conference}}. 2016 Sept 14-16. Wellcome Genome Campus, Hinxton, Cambridge, UK.
 	\item On the widespread and critical impact of systemic bias and batch effects in single-cell RNA-seq data. \href{https://www.amstat.org/meetings/jsm/2016/onlineprogram/MainSearchResults.cfm}{{\it Joint Statistical Meetings}}. 2016 July 31-Aug 4. Chicago, IL, USA. 
 	\item On the widespread and critical impact of systemic bias and batch effects in single-cell RNA-seq data. \href{http://hsci.harvard.edu/event/widespread-and-critical-impact-systemic-bias-and-batch-effects-single-cell-rna-seq-data?delta=0}{{\it Boston Single-Cell Network Meeting}}. 2016 March 15. Boston, MA, USA. 
-	\item Introduction to R and R Package Demonstration. Dept of Biostatistics and Computational Biology Training Sessions. Dana-Farber Cancer Institute. 2016 March 9. Boston, MA, USA. 
 	\item \href{https://speakerdeck.com/stephaniehicks/why-statistics-matters-in-the-analysis-of-genomics-data}{Why Statistics Matters in the Analysis of Genomics Data}. Computational Biology Seminar, Department of Biology, Louisiana State University. 2015 Feb 11. Baton Rouge, LA, USA.  
 	\item Normalization of DNA methylation and Gene Expression Data in the Context of Global Variation.  Bioinformatics Meeting, Division of Immunology, Harvard Medical School. 2014 Sept 18. Boston, MA, USA. 
 \end{enumerate}
 
 
-\vskip .2in
+\vskip .15in
 \textbf{Contributed Talks} 
-\begin{enumerate}[label= {[\arabic*]}]
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
 	\item {\bf Hicks SC}. Missing Data and Technical Variability in Single-Cell RNA-Sequencing Experiments. \href{https://ww2.amstat.org/meetings/jsm/2017/}{{\it Joint Statistical Meetings}}. 2017 Jul 29-Aug 3. Baltimore, MD, USA. 
 	\item {\bf Hicks SC}. Missing Data and Technical Variability in Single Cell RNA-Sequencing Experiments. \href{https://www.bsse.ethz.ch/cbg/cbg-news/ascona-2017.html}{Ascona Workshop 2017: Statistical Challenges in Single Cell Biology}. 2017 Apr 30-May 5. Ascona, Switzerland. 
 	\item {\bf Hicks SC}. Transforming the Classroom to Teach Statistics and Data Science with Active Learning. \href{http://www.amstat.org/meetings/wsds/2016/}{{\it Women in Statistics and Data Science Conference}}. 2016 Oct 20-22. Charlotte, NC, USA. 
@@ -321,50 +321,103 @@ I develop statistical methods, tools and software for the analysis of genomics d
 \end{enumerate}
 
 
-%\vskip .2in
+\vskip .15in
 \textbf{Conference Proceedings} 
-\begin{enumerate}[label= {[\arabic*]}]
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
 	\item Saliba J, Trevino LR, Meng Q, Zabriskie R, Powell B, {\bf Hicks S}, Kimmel M, Cheung H, Muzny DM, Reid JG, Wheeler D, Gibbs RA, and Plon SE.  Abstract 5113: Functional analysis of genomic variants identified through whole exome sequencing for susceptibility to lymphocytic leukemia. {\it AACR 103rd Annual Meeting}. 2012 Mar 31-Apr 4. Chicago, IL. 
 	\item Saliba J, Zabriskie R, Powell B, {\bf Hicks S}, Kimmel M, Cheung H, Ritter D, Muzny DM, Reid JG, Wheeler DA, Gibbs RA, Plon SE. Abstract A8: Functional analysis of genomic variants identified through whole exome sequencing of pediatric lymphocytic leukemia kindreds. {\it AACR Special Conference: Pediatric Cancer at the Crossroads: Translating Discovery into Improved Outcomes}. 2013 Nov 3-6. San Diego, CA. 
-
 \end{enumerate}
 
 
-\vskip .2in
-
+\vskip .15in
 \textbf{Selected Poster Presentations} 
-\begin{enumerate}[label= {[\arabic*]}]
-\item {\bf Hicks S}, Teng M, Irizarry R. On the widespread and critical impact of batch effects and systematic bias in single-cell RNA-Seq data. Poster presented at {2015 Genome Informatics}. 2015 Oct 28-31. Cold Spring Harbor Laboratories. 
-\item {\bf Hicks S}, Irizarry R. When to use Quantile Normalization? Poster presented at: \emph{2014 Women in Statistics Conference}. 2014 May 15-17. Cary, NC.
-\item {\bf Hicks S}, Irizarry R. Estimating cell composition of whole blood using differentially methylated regions. Poster presented at: \emph{2013 PQG Conference}. 2013. Nov 14-15. Boston, MA. 
-\item {\bf Hicks S}, Plon SE, Kimmel M. postMUT: A Statistical Tool for Combining Predictions of Missense Mutation Functionality using Capture-Recapture Methods. Poster presented at: \emph{63nd Annual Meeting of The American Society of Human Genetics}. 2013. Oct 22-26. Boston, MA.
-\item Kimmel M, {\bf Hicks S}, Plon SE. Applications of Hidden Markov Models with Conditional Emission Probabilities to Identify Regions of Identity-By-Descent in Whole-Exome Sequencing Data. Poster presented at: \emph{63nd Annual Meeting of The American Society of Human Genetics}. 2013. Oct 22-26. Boston, MA.
-\item {\bf Hicks S}, Plon SE, Kimmel M. Capture-Recapture Models for Evaluation of Algorithms Estimating Functionality of Missense Mutations. Poster presented at: \emph{62nd Annual Meeting of The American Society of Human Genetics}. 2012 Nov 6-12. San Francisco, CA. %(Abstract $\#$ 3549F)
-\item {\bf Hicks S}, Plon SE, Kimmel M. Bernoulli mixture models in application of the evaluation of algorithms estimating functionality of missense mutations. Poster presented at: \emph{Beyond The Genome}. 2012 Sept 27-29. Boston, MA.
-\item {\bf Hicks S}, Plon SE, Kimmel M. Bernoulli Mixture Models in Application of the Evaulation of Algorithms Estimating Functionality of Missense Mutations. Poster presented at: \emph{International Conference in Stochastic Processes}. 2012. Aug 21-25. Houston, TX. 
-\item {\bf Hicks S}, Plon SE, Kimmel M. Using a Second-order Hidden Markov Model to Identify Regions of Identity-By-Descent in Exome Sequencing Data. Poster presented at: \emph{12th International Congress of Human Genetics/61st Annual Meeting of The American Society of Human Genetics}. 2011 Nov 12-15. Montreal, Canada.
-\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Poster presented at: \emph{60th Annual Meeting of the American Society of Human Genetics}. 2010 Nov 2-6. Washington, D.C.
-\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Poster presented at: \emph{4th Annual Meeting of the Genomics of Common Diseases}. 2010 Oct 6-9. Houston, TX.
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
+\item {\bf Hicks SC}, Townes WF, Teng M, Irizarry RA. Missing Data and Technical Variability in Single Cell RNA-Sequencing Experiments. Poster presented at \textit{2018 NHGRI Annual Meeting}. 2018 Mar 18-21. UCLA. 
+\item {\bf Hicks SC}, Teng M, Irizarry R. On the widespread and critical impact of batch effects and systematic bias in single-cell RNA-Seq data. Poster presented at \textit{2015 Genome Informatics}. 2015 Oct 28-31. Cold Spring Harbor Laboratories. 
+\item {\bf Hicks SC}, Irizarry R. When to use Quantile Normalization? Poster presented at: \emph{2014 Women in Statistics Conference}. 2014 May 15-17. Cary, NC.
+\item {\bf Hicks SC}, Irizarry R. Estimating cell composition of whole blood using differentially methylated regions. Poster presented at: \emph{2013 PQG Conference}. 2013. Nov 14-15. Boston, MA. 
+\item {\bf Hicks SC}, Plon SE, Kimmel M. postMUT: A Statistical Tool for Combining Predictions of Missense Mutation Functionality using Capture-Recapture Methods. Poster presented at: \emph{63nd Annual Meeting of The American Society of Human Genetics}. 2013. Oct 22-26. Boston, MA.
+\item Kimmel M, {\bf Hicks SC}, Plon SE. Applications of Hidden Markov Models with Conditional Emission Probabilities to Identify Regions of Identity-By-Descent in Whole-Exome Sequencing Data. Poster presented at: \emph{63nd Annual Meeting of The American Society of Human Genetics}. 2013. Oct 22-26. Boston, MA.
+\item {\bf Hicks SC}, Plon SE, Kimmel M. Capture-Recapture Models for Evaluation of Algorithms Estimating Functionality of Missense Mutations. Poster presented at: \emph{62nd Annual Meeting of The American Society of Human Genetics}. 2012 Nov 6-12. San Francisco, CA. %(Abstract $\#$ 3549F)
+\item {\bf Hicks SC}, Plon SE, Kimmel M. Bernoulli mixture models in application of the evaluation of algorithms estimating functionality of missense mutations. Poster presented at: \emph{Beyond The Genome}. 2012 Sept 27-29. Boston, MA.
+\item {\bf Hicks SC}, Plon SE, Kimmel M. Bernoulli Mixture Models in Application of the Evaulation of Algorithms Estimating Functionality of Missense Mutations. Poster presented at: \emph{International Conference in Stochastic Processes}. 2012. Aug 21-25. Houston, TX. 
+\item {\bf Hicks SC}, Plon SE, Kimmel M. Using a Second-order Hidden Markov Model to Identify Regions of Identity-By-Descent in Exome Sequencing Data. Poster presented at: \emph{12th International Congress of Human Genetics/61st Annual Meeting of The American Society of Human Genetics}. 2011 Nov 12-15. Montreal, Canada.
+\item {\bf Hicks SC}, Plon SE, Wheeler DE, Kimmel, M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Poster presented at: \emph{60th Annual Meeting of the American Society of Human Genetics}. 2010 Nov 2-6. Washington, D.C.
+\item {\bf Hicks SC}, Plon SE, Wheeler DE, Kimmel, M. Prediction of Missense Mutation Functionality Depends on both the Algorithm and Sequence Alignment Employed. Poster presented at: \emph{4th Annual Meeting of the Genomics of Common Diseases}. 2010 Oct 6-9. Houston, TX.
 \item Cheung HC, San Lucas F, {\bf Hicks S}, Chang K, Plon SE, Bertuch AA, Ribes-Zamora A. S/T-Q Cluster Domains in Saccharomyces cerevisiae: a bioinformatic census and analysis. Poster presented at: \emph{BioScience Research Collaborative Grand Opening}. 2010 Apr 1. Houston, TX. 
-\item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Predicting Functionality of Missense Mutations with Varying Levels of Evolutionary Depth. Poster presented at: \emph{Computational \& Theoretical Biology Symposium}. 2009 Dec 4-6. Houston, TX.  
+\item {\bf Hicks SC}, Plon SE, Wheeler DE, Kimmel, M. Predicting Functionality of Missense Mutations with Varying Levels of Evolutionary Depth. Poster presented at: \emph{Computational \& Theoretical Biology Symposium}. 2009 Dec 4-6. Houston, TX.  
 \item {\bf Hicks S}, Plon SE, Wheeler DE, Kimmel, M. Predicting Functionality of Missense Mutations with Varying Levels of Evolutionary Depth. Poster presented at: \emph{59th Annual Meeting of the American Society of Human Genetics}. 2009 Oct 20-24. Honolulu, HI.
 \end{enumerate}
 
-\vskip .2in
 
-\textbf{Ph.D. Dissertation}
-\begin{enumerate}[label= {[\arabic*]}]
-\item {\bf Hicks SC}. Probabilistic Models for Genetic and Genomic Data with Missing Information, Ph.D. Thesis, Rice University, 2013. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Fellowships and Scholarships %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip -.15in
+\section{Fellowships}
+\begin{enumerate}
+\item[2017 - 2021] NIH/NHGRI K99/R00 Pathway to Independence Award -- Statistical Methods for the Normalization and Quantification of Single-Cell RNA-Sequencing Data
+\item[2009 - 2011] NIH/NCI T32 Predoctoral Training Program in Biostatistics, Rice University 
+\item[2005 - 2007] LA-STEM Research Scholars, LSU 
+\item[2004 - 2005] HMMI Professors Program, LSU 
 \end{enumerate}
 
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Reviewed journal articles %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Editorial Activities} 
+
+\textbf{Editorial Board Membership}
+\begin{enumerate}[labelwidth=70pt]
+\item[2018 - Present ] Associate Editor, \href{https://www.bioverlay.org}{\textit{biOverlay}} \label{last-item}
+\end{enumerate}
+
+\textbf{Peer Review Activities} \\
+
+\textit{Journal Referee} for Annals of Statistics, Bioinformatics, Biometrics, BMC Medical Genetics, F1000, Genome Biology, Human Mutation,  Nature Communications, Nature Structural $\&$ Molecular Biology, Nature Scientific Reports, PLoS Computational Biology, PLoS One, R Journal, 
+
+\vspace{.1in}
+
+\textit{Book reviewer} for Chapman $\&$ Hall/CRC
+
+% \textbf{Review Panels} \\
+
+% \textbf{Ad hoc Review of Proposals} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Service %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip -.15in
+\section{Service} 
+
+\textbf{International and National} 
+\begin{enumerate}[labelwidth=70pt]
+\item[2018 - Present] Co-founder of R-Ladies Baltimore \\ An organization to promote gender diversity in the R community
+\item[2017 - 2019] Member of \href{https://www.amstat.org/committees/commdetails.cfm}{ASA Committee on Women in Statistics} 
+\item[2015 - Present] Board Member of \href{http://www.scienceambassadorscholarship.org}{Cards Against Humanities Science Ambassador Scholarship}
+\end{enumerate}
+
+%\textbf{University} 
+%\begin{enumerate}[labelwidth=70pt]
+%\item[ ] 
+%\end{enumerate}
+
+%\textbf{Departmental} 
+%\begin{enumerate}[labelwidth=70pt]
+%\item[ ] 
+%\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% Software %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vskip -.15in
 \section{Software}
+
 \textbf{Bioconductor and Github}
-\begin{enumerate}[label= {[\arabic*]}]
+\begin{enumerate}[label= {[\arabic*]}, labelwidth=15pt]
 \item \textit{methylCC}: An R-package to estimate the cell composition of whole blood in DNA methylation samples in microarray or sequencing platforms [\href{https://github.com/stephaniehicks/methylCC}{Available on GitHub}]
 \item \textit{qsmooth}: An R-package that implements a generalization of quantile normalization, referred to as smooth quantile normalization (\textbf{qsmooth}), which is based on the assumption that the statistical distribution of each sample should be the same (or have the same distributional shape) within biological groups or conditions [\href{https://github.com/stephaniehicks/qsmooth}{Available on GitHub}]
 \item \textit{explainr}: An R-package to translate S3 objects into text using standard templates in a simple and convenient way. Developed at \href{http://unconf.ropensci.org}{ROpenSci Unconference} with \href{http://hilaryparker.com}{Hilary Parker}, \href{http://varianceexplained.org}{David Robinson} and \href{http://www.biostat.jhsph.edu/~rpeng/}{Roger Peng}. [\href{https://github.com/hilaryparker/explainr}{Available on GitHub}]
@@ -372,152 +425,132 @@ I develop statistical methods, tools and software for the analysis of genomics d
 \item \textit{quantroSim}: A supporting data simulation R-package for the \textit{quantro} R-package 
 to simulate gene expression and DNA methylation data  [\href{https://github.com/stephaniehicks/quantroSim}{Available on GitHub}] 
 \item \textit{postMUT}: A tool implemented in Perl and R to predict the functionality of missense mutations [\href{https://github.com/stephaniehicks/postMUT}{Available on GitHub}]
-\end{enumerate}     
-  
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%% Teaching Experience %%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\newpage
-\vskip -.2in
-
-\section{Teaching Experience}
-\vskip -.20in
-\begin{table}[h]
-\begin{tabular}{ll}
-2016 & {\bf Co-instructor}, \href{http://datasciencelabs.github.io/2016/}{Introduction to Data Science (HSPH - BIO 260)} \\
-& Co-taught lectures with Rafael Irizarry, developed course material \\ 
-& \\
-2015 & {\bf Teaching Assistant}, \href{http://meetings.cshl.edu/courses.aspx?course=c-data&year=15}{Statistical Methods for Functional Genomics (CSHL)} \\
-& Contributed course material, gave a lecture, answered questions.  \\ 
-& \\
-2015 & \textbf{Contributor and Discussion Leader} \\ 
-& \hspace{0.1in} (1) \href{https://courses.edx.org/courses/HarvardX/PH525.1x/1T2015/info}{Statistics and R for the Life Sciences
-(Harvard edX - PH525.1x)} \\
-& \hspace{0.1in} (2) \href{https://courses.edx.org/courses/HarvardX/PH525.8x/1T2015/info}{Case study: DNA methylation data analysis (Harvard edX - PH525.8x)} \\
-& Contributed course material, created screencasts, developed assessments, answered questions. \\
-& Courses taught by Rafael Irizarry with Teaching Assistant Mike Love. \\
-& \\
-2014 & \textbf{Lead Teaching Fellow}, \href{http://cs109.github.io/2014/}{Data Science (Harvard - CS109)} \\
-& Held weekly lab sections. Developed course material, homework and solutions.  \\
-& Coordinated and directed 25 teaching fellows. All material available on:  \href{https://github.com/cs109/2014}{Github}\\
-& Course taught by Rafael Irizarry and Verena Kaynig-Fittkau. \\
-& \\
-2014 & \textbf{Discussion Leader}, \href{https://www.edx.org/course/harvardx/harvardx-ph525x-data-analysis-genomics-1401}{Data Analysis for Genomics (Harvard edX - PH525x)} \\
-& Course taught by Rafael Irizarry with Teaching Assistant Mike Love. \\
-& \\
-2010, 2011 & \textbf{Teaching Assistant}, Probability in Bioinformatics and Genetics (Rice - STAT 423/623)   \\
-& Grade homeworks, provide solutions, hold office hours and gave several guest lectures.  \\
-& \\
-2010 & \textbf{Teaching Assistant}, Applied Stochastic Processes (Rice - STAT 552)   \\
-& Grade homeworks, provide solutions, hold office hours and gave several guest lectures. \\
-& \\
-2008, 2009 & \textbf{Lab Instructor}, Introduction to Statistics for the Biosciences (Rice - STAT 305)   \\
- & Hold labs 3hr/week to teach students to use R. \\
-& \\
-2007, 2008 & \textbf{Teaching Assistant}, Probability and Statistics (Rice - STAT 310)   \\
-& Grade homeworks, provide solutions, hold office hours and gave several guest lectures. 
-\end{tabular}
-\end{table}
-
-%\vskip .2in
+\end{enumerate} 
+      
 
 
-
- \vskip -.2in
-\section{Community Coding Experience}
-\vskip -.20in
-\begin{table}[h]
-\begin{tabular}{ll}
-Sept 2015 & \textbf{Mozilla Open Science Leadership Summit} (\href{https://www.mozillascience.org/open-science-summit-2015}{website}), Mozilla, Toronto, Canada \\
-& Invited to work with community leaders furthering open practice and open science  \\ 
-& through creating community events, tools for collaboration and learning resources. \\
-&  \\ 
-Mar 2015 & \textbf{ROpenSci Unconference} (\href{http://unconf.ropensci.org}{website}), GitHub, San Francisco, CA \\
-& Invited to work with over 40 R enthusiasts from industry, academia, non-profits and \\
-& government on projects supporting open data, open science and data visualization in R.  \\
-%& Contributed to R-packages including \href{https://github.com/hilaryparker/explainr}{explainr} and \href{https://github.com/hilaryparker/catsplainr}{catsplainr}.  \\
-\end{tabular}
-\end{table}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% Service %%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Grants and Fellowships %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip -.15in
-\section{Service}
-\vskip -.35in
-\begin{table}[h]
-\begin{tabular}{ll}
-2017 - 2019 &  Member of \href{https://www.amstat.org/committees/commdetails.cfm}{ASA Committee on Women in Statistics} \\
-2015 - Present & Board Member of \href{http://www.scienceambassadorscholarship.org}{Cards Against Humanities Science Ambassador Scholarship}
+\section{Grants}
+
+\textbf{Current Grant Support} \\
+
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+Chan Zuckerberg Institute & 03/01/2018 -- 02/28/2019 \\
+Davide Risso, PI  & (5\%) %$\$$9,424 
 \end{tabular}
-\end{table}
+Statistical Analysis and Comprehension of the Human Cell Atlas in R / Bioconductor: Access and Scalable Infrastructure \\
+\textit{Provide R / Bioconductor software (A) to provide coherent programmatic interface to the HCA, and (B) to enable scalable interactive statistical analysis of single-cell data.} \\
+Role: Co-Investigator
 
+\vskip .2in
+
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+NIH/NHGRI (K99) R00HG009007 & 12/23/2016 -- 02/28/2019  \\
+Stephanie Hicks, PI & (75\%) % $\$$439,551		
+\end{tabular}
+Statistical Methods for the Normalization and Quantification of Single-Cell RNA-Sequencing Data \\ 
+\textit{To develop novel statistical methods that will 1) remove systematic errors in single-cell RNA-sequencing data by accounting for variability visible only at the single-cell level and 2) quantify biological variability such as transcriptional heterogeneity within and between populations of cells.} \\
+Role: Principal Investigator
+
+
+\vskip .4in
+
+\textbf{Previous Grant Support} \\
+
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+NIH T32 CA096520 & 08/01/2009 -- 12/31/2011 \\
+Marina Vannucci, PI & 			
+\end{tabular}
+Predoctoral Training Program in Biostatistics, Rice University \\
+\textit{Prepare a new generation of biostatisticians who will work side-by-side with biomedical investigators in modern cancer research.} \\
+Role: Predoctoral Trainee
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Teaching %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vskip -.15in
+\section{Educational Activities} 
+
+%\textbf{PhD Advisees} 
+%\begin{enumerate}[labelwidth=50pt]
+%\item[]
+%\end{enumerate}
+
+%\textbf{Masters Advisees} 
+%\begin{enumerate}[labelwidth=50pt]
+%\item[]
+%\end{enumerate}
+
+%\textbf{Undergraduate Advisees} 
+%\begin{enumerate}[labelwidth=50pt]
+%\item[]
+%\end{enumerate}
+
+\textbf{Doctoral Thesis Committees} 
+\begin{enumerate}[labelwidth=50pt]
+\item[2018] Tom Luechtefeld, Environmental Health and Engineering  \\ Alternate committee member
+\end{enumerate}
+  
+%\textbf{Oral Exams} 
+% \begin{enumerate}[labelwidth=50pt]
+%\item[]
+%\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% Technical Skills %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Teaching %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip -.15in
+\section{Teaching} 
+
+\textbf{Classroom Instruction} 
+\begin{enumerate}
+\item[2016] {\bf Co-instructor}, \href{http://datasciencelabs.github.io/2016/}{Introduction to Data Science (HSPH - BIO 260)}. \\ 
+	Co-taught lectures with Rafael Irizarry. Developed course material. 
+\item[2015] {\bf Teaching Assistant}, \href{http://meetings.cshl.edu/courses.aspx?course=c-data&year=15}{Statistical Methods for Functional Genomics (CSHL)}. \\ 
+	Developed course material, gave one lecture, answered questions.
+\item[2015] \textbf{Contributor and Discussion Leader} \\ 
+	(1) \href{https://courses.edx.org/courses/HarvardX/PH525.1x/1T2015/info}{Statistics and R for the Life Sciences (Harvard edX - PH525.1x)} \\ (2) \href{https://courses.edx.org/courses/HarvardX/PH525.8x/1T2015/info}{Case study: DNA methylation data analysis (Harvard edX - PH525.8x)} \\
+	Contributed course material, created screencasts, developed assessments, answered questions. \\
+	Courses taught by Rafael Irizarry with Teaching Assistant Michael Love.
+\item[2014] \textbf{Lead Teaching Fellow}, \href{http://cs109.github.io/2014/}{Data Science (Harvard - CS109)} \\
+	Held weekly lab sections. Developed course material, homework and solutions.  \\
+	Coordinated and directed 25 teaching fellows. All material available on:  \href{https://github.com/cs109/2014}{Github}. \\
+	Course taught by Rafael Irizarry and Verena Kaynig-Fittkau.
+\item[2014] \textbf{Discussion Leader}, \href{https://www.edx.org/course/harvardx/harvardx-ph525x-data-analysis-genomics-1401}{Data Analysis for Genomics (Harvard edX - PH525x)} \\
+	Course taught by Rafael Irizarry and Michael Love.
+\item[2010, 2011] \textbf{Teaching Assistant}, Probability in Bioinformatics and Genetics (Rice - STAT 423/623) \\
+	Grade homeworks, provide solutions, hold office hours and gave several guest lectures.
+\item[2010] \textbf{Teaching Assistant}, Applied Stochastic Processes (Rice - STAT 552)   \\
+	Grade homeworks, provide solutions, hold office hours and gave several guest lectures.
+\item[2008, 2009]  \textbf{Lab Instructor}, Introduction to Statistics for the Biosciences (Rice - STAT 305)   \\
+	Hold labs 3hr/week to teach students to use R.
+\item[2007, 2008] \textbf{Teaching Assistant}, Probability and Statistics (Rice - STAT 310) \\
+	Grade homeworks, provide solutions, hold office hours and gave several guest lectures. 
+\end{enumerate}
+
+\textbf{Other teaching} 
+\begin{enumerate}
+\item[2017] \href{https://github.com/stephaniehicks/introRandRStudio}{Instructor, Introduction to R, RStudio and the ``Tidyverse"}. How It's Done Seminar in the Biostatistics and Computational Biology Department, DFCI. 2017 Sept 20. Boston, MA, USA. 
+\item[2016] Instructor, Introduction to R and R Package Demonstration. Department of Biostatistics and Computational Biology Training Sessions. DFCI. 2016 March 9. Boston, MA, USA. 
+\end{enumerate}
 
 
-\section{Technical Skills}
-\textbf{Programming}: R, Python, Git, Perl, LaTeX{}, SAS, Matlab, Shell scripting \\
-\textbf{Operating Systems}: Mac OS X, Unix, Windows
-   
+ \vskip -.15in
+\section{Community Coding}
+\begin{enumerate}
+\item[Sept 2015] \textbf{Mozilla Open Science Leadership Summit} (\href{https://www.mozillascience.org/open-science-summit-2015}{website}), Mozilla, Toronto, Canada \\ 
+Invited to work with community leaders furthering open practice and open science through creating community events, tools for collaboration and learning resources. 
+\item[Mar 2015] \textbf{ROpenSci Unconference} (\href{http://unconf.ropensci.org}{website}), GitHub, San Francisco, CA \\
+Invited to work with over 40 R enthusiasts from industry, academia, non-profits and government on projects supporting open data, open science and data visualization in R.   \\ 
+Contributed to R-packages including \href{https://github.com/hilaryparker/explainr}{explainr} and \href{https://github.com/hilaryparker/catsplainr}{catsplainr}. 
+\end{enumerate}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%% Reviewed journal articles %%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Journal Referee / Reviewer}
-\emph{Nature Structural $\&$ Molecular Biology, Nature Scientific Reports, Bioinformatics, Biometrics, BMC Medical Genetics, Genome Biology, Human Mutation, PLoS Computational Biology, PLoS One}
-
-%\vskip .2in
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% Statistical Expertise %%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\section{Statistical Expertise}
-%%
-%Statistical Learning, Statistical Genetics, Stochastic Processes,  Survival Analysis, Bayesian Data Analysis, Multivariate Analysis, Biostatistics, Probabilistic Models in Bioinformatics, General Linear Models, Statistical Sampling
-%
-
-
-        
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%% Selected Memberships %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   
-\section{Professional Memberships}
-%
-Member, American Statistical Association (ASA) \\
-Member, American Mathematical Society (AMS) \\
-Member, American Society of Human Genetics (ASHG)
-
-
-
-
-%
-%\section{References}
-%%
-% Marek Kimmel, Ph.D. \\
-%Professor, Department of Statistics \\ 
-%Rice University \\
-%kimmel@rice.edu, (713) 348-5255 \\
-%
-%Sharon Plon, M.D., Ph.D. \\
-%Professor, Departments of Pediatrics and Human and Molecular Genetics \\
-%Human Genome Sequencing Center \\
-%Baylor College of Medicine \\
-% splon@bcm.edu, (832) 824-4251 \\ 
-% 
-%Kathy Ensor, Ph.D. \\
-%Professor and Chair, Department of Statistics \\
-%Rice University \\
-%ensor@rice.edu, (713) 348-4687  \\
 
 \end{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

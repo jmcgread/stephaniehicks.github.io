@@ -5,7 +5,7 @@ title: Stephanie Hicks
 
 ## Welcome! 
 
-Stephanie Hicks is an Assistant Professor in the [Department of Biostatistics](https://www.jhsph.edu/departments/biostatistics/) at [Johns Hopkins Bloomberg School of Public Health](https://www.jhsph.edu). 
+Stephanie Hicks is an Assistant Professor in the [Department of Biostatistics](https://www.jhsph.edu/departments/biostatistics/) at [Johns Hopkins Bloomberg School of Public Health](https://www.jhsph.edu). I'm also a faculty member of the [Johns Hopkins Data Science Lab](http://jhudatascience.org) and co-founder of [R-Ladies Baltimore](https://www.meetup.com/rladies-baltimore/). 
 
 I received my B.S. in [Mathematics](https://www.math.lsu.edu) from [LSU](https://www.lsu.edu) and my M.A. and Ph.D. from the [Department of Statistics](http://statistics.rice.edu) at [Rice University](http://www.rice.edu) under the direction of [Marek Kimmel](http://statistics.rice.edu/feed/FacultyDisplay.aspx?FID=270) and [Sharon Plon](https://www.bcm.edu/people/view/b2601d8d-ffed-11e2-be68-080027880ca6/babc3eb0-c422-11e3-a42d-005056b104be) ([@splon](https://twitter.com/splon)). 
 
